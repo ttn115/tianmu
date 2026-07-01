@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>溫病條辨・上焦篇｜白話解說</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;900&family=Noto+Sans+TC:wght@300;400;500&display=swap');
+
+  :root {
+    --ink:        #1a1208;
+    --paper:      #faf7f2;
+    --amber:      #c8882a;
+    --amber-soft: #f0d9a8;
+    --amber-pale: #faf0dc;
+    --rust:       #8b3a1c;
+    --mist:       #e8e0d0;
+    --pine:       #2d4a3e;
+    --pine-pale:  #e8f0ec;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 80px 40px 70px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(200,136,42,.06) 60px, rgba(200,136,42,.06) 61px),
+      repeating-linear-gradient(0deg,  transparent, transparent 60px, rgba(200,136,42,.06) 60px, rgba(200,136,42,.06) 61px);
+  }
+  .hero-tag {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 12px;
+    letter-spacing: .4em;
+    color: var(--amber);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    position: relative;
+  }
+  .hero h1 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: clamp(36px, 6vw, 72px);
+    font-weight: 900;
+    letter-spacing: .05em;
+    line-height: 1.1;
+    position: relative;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--amber);
+  }
+  .hero-sub {
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgba(250,247,242,.6);
+    letter-spacing: .05em;
+    position: relative;
+  }
+  .hero-dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    background: var(--amber);
+    border-radius: 50%;
+    margin: 0 10px;
+    vertical-align: middle;
+  }
+
+  /* ── NAV ── */
+  .toc-bar {
+    background: var(--ink);
+    padding: 0 40px;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    border-top: 1px solid rgba(255,255,255,.08);
+  }
+  .toc-bar a {
+    color: rgba(250,247,242,.5);
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: .06em;
+    padding: 14px 18px;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: color .2s, border-color .2s;
+  }
+  .toc-bar a:hover { color: var(--amber); border-bottom-color: var(--amber); }
+
+  /* ── MAIN LAYOUT ── */
+  .content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 32px 100px;
+  }
+
+  /* ── SECTION ── */
+  .chapter {
+    margin-bottom: 72px;
+  }
+  .chapter-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 36px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--mist);
+  }
+  .chapter-num {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .2em;
+    color: var(--amber);
+    background: var(--amber-pale);
+    border: 1px solid var(--amber-soft);
+    padding: 4px 10px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+  .chapter-head h2 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: .06em;
+  }
+
+  /* ── CONDITION CARD ── */
+  .condition {
+    margin-bottom: 44px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(26,18,8,.08);
+  }
+  .condition-header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 16px 24px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .cond-num {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 11px;
+    color: var(--amber);
+    letter-spacing: .2em;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .cond-title {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: .04em;
+  }
+
+  .original-block {
+    background: #1f1a12;
+    padding: 18px 24px;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14px;
+    color: rgba(250,247,242,.55);
+    line-height: 1.9;
+    letter-spacing: .04em;
+    border-top: 1px solid rgba(255,255,255,.04);
+  }
+  .original-block .orig-label {
+    font-size: 10px;
+    letter-spacing: .3em;
+    color: var(--amber);
+    opacity: .7;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .plain-block {
+    padding: 22px 24px;
+    background: #fff;
+    line-height: 1.85;
+    font-size: 16px;
+  }
+  .plain-block .plain-label {
+    font-size: 10px;
+    letter-spacing: .3em;
+    color: var(--pine);
+    opacity: .8;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .plain-block p { margin-bottom: 10px; }
+  .plain-block p:last-child { margin-bottom: 0; }
+
+  /* tags inside plain */
+  .tag-sym {
+    display: inline-block;
+    background: #fff0e0;
+    color: var(--rust);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px;
+    border-radius: 20px;
+    margin: 1px 2px;
+    vertical-align: middle;
+  }
+  .tag-herb {
+    display: inline-block;
+    background: var(--pine-pale);
+    color: var(--pine);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px;
+    border-radius: 20px;
+    margin: 1px 2px;
+    vertical-align: middle;
+  }
+  .tag-warn {
+    display: inline-block;
+    background: #fdecea;
+    color: #b71c1c;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1px 8px;
+    border-radius: 20px;
+    margin: 1px 2px;
+    vertical-align: middle;
+  }
+
+  /* ── PRESCRIPTION ── */
+  .rx-block {
+    background: var(--amber-pale);
+    border-left: 3px solid var(--amber);
+    padding: 18px 22px;
+    font-size: 14px;
+  }
+  .rx-block .rx-label {
+    font-size: 11px;
+    letter-spacing: .25em;
+    color: var(--amber);
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .rx-name {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--rust);
+    margin-bottom: 10px;
+  }
+  .rx-herbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .rx-herb-tag {
+    background: #fff;
+    border: 1px solid var(--amber-soft);
+    color: var(--ink);
+    font-size: 13px;
+    padding: 3px 10px;
+    border-radius: 3px;
+  }
+  .rx-note {
+    font-size: 13px;
+    color: #665530;
+    line-height: 1.7;
+    margin-top: 8px;
+  }
+
+  /* ── SPECIAL BOX ── */
+  .special-box {
+    background: linear-gradient(135deg, #1a1208 0%, #2d1f0a 100%);
+    color: var(--paper);
+    border-radius: 6px;
+    padding: 28px 32px;
+    margin: 28px 0;
+  }
+  .special-box h3 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 15px;
+    color: var(--amber);
+    letter-spacing: .1em;
+    margin-bottom: 14px;
+  }
+  .special-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  .special-box ul li {
+    padding: 6px 0 6px 18px;
+    position: relative;
+    font-size: 15px;
+    color: rgba(250,247,242,.85);
+    line-height: 1.7;
+    border-bottom: 1px solid rgba(255,255,255,.06);
+  }
+  .special-box ul li:last-child { border-bottom: none; }
+  .special-box ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--amber);
+    font-size: 10px;
+    top: 9px;
+  }
+
+  /* ── INTRO ── */
+  .intro-section {
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 6px;
+    padding: 36px 40px;
+    margin-bottom: 60px;
+  }
+  .intro-section h2 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 18px;
+    color: var(--amber);
+    letter-spacing: .12em;
+    margin-bottom: 18px;
+  }
+  .intro-section p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: rgba(250,247,242,.78);
+    margin-bottom: 12px;
+  }
+  .intro-section p:last-child { margin-bottom: 0; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--ink);
+    color: rgba(250,247,242,.4);
+    text-align: center;
+    padding: 30px;
+    font-size: 13px;
+    letter-spacing: .05em;
+  }
+
+  /* ── COLLAPSE TOGGLE ── */
+  details { }
+  details summary {
+    cursor: pointer;
+    list-style: none;
+  }
+  details summary::-webkit-details-marker { display: none; }
+  .orig-toggle {
+    background: #1f1a12;
+    padding: 10px 24px;
+    font-size: 12px;
+    color: rgba(250,247,242,.35);
+    letter-spacing: .2em;
+    cursor: pointer;
+    user-select: none;
+    border-top: 1px solid rgba(255,255,255,.04);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .orig-toggle::after {
+    content: '▸';
+    font-size: 9px;
+    transition: transform .2s;
+  }
+  details[open] .orig-toggle::after { transform: rotate(90deg); }
+  .orig-toggle:hover { color: rgba(250,247,242,.6); }
+
+  @media (max-width: 600px) {
+    .hero { padding: 60px 24px 50px; }
+    .content { padding: 40px 20px 80px; }
+    .intro-section { padding: 26px 22px; }
+    .condition-header { padding: 14px 18px; }
+    .plain-block, .original-block { padding: 16px 18px; }
+    .rx-block { padding: 16px 18px; }
+    .special-box { padding: 22px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <p class="hero-tag">清 吳鞠通 著</p>
+  <h1>溫病條辨<br><em>上焦篇</em></h1>
+  <p class="hero-sub">原文對照<span class="hero-dot"></span>白話解說<span class="hero-dot"></span>方藥整理</p>
+</header>
+
+<!-- NAV -->
+<nav class="toc-bar">
+  <a href="#intro">緒論</a>
+  <a href="#basic">基本條文</a>
+  <a href="#yinqiao">銀翹散篇</a>
+  <a href="#baihu">白虎湯篇</a>
+  <a href="#bleeding">出血斑疹篇</a>
+  <a href="#shenhun">神昏篇</a>
+  <a href="#shidu">濕溫篇</a>
+  <a href="#warning">禁忌總結</a>
+</nav>
+
+<main class="content">
+
+  <!-- INTRO -->
+  <section class="intro-section" id="intro">
+    <h2>讀前導覽</h2>
+    <p>《溫病條辨》是清代醫家<strong>吳鞠通</strong>（約1758–1836）歷時十餘年所著的溫病學經典。全書分上、中、下三焦篇，以三焦（上焦肺心、中焦脾胃、下焦肝腎）為綱，系統整理溫熱病的辨證與治法。</p>
+    <p>上焦篇主論<strong>溫邪從口鼻而入、首犯肺系</strong>的各種病變。病情輕時在衛表，重時入氣、入營、入血，最後可傷及心包。這種「衛氣營血」的傳變，是理解本篇的核心框架。</p>
+    <p>以下白話解說以現代語言重新詮釋各條原文，力求保留醫理精髓，協助讀者快速掌握臨床要點。</p>
+  </section>
+
+  <!-- CHAPTER 1 -->
+  <section class="chapter" id="basic">
+    <div class="chapter-head">
+      <span class="chapter-num">第一章</span>
+      <h2>溫病總綱與基本定義</h2>
+    </div>
+
+    <!-- 條1 -->
+    <div class="condition">
+      <div class="condition-header">
+        <span class="cond-num">條 一</span>
+        <span class="cond-title">溫病的九種類型</span>
+      </div>
+      <div class="plain-block">
+        <span class="plain-label">白話解說</span>
+        <p>溫病不是只有一種，吳鞠通把它整理成九類：<span class="tag-sym">風溫</span><span class="tag-sym">溫熱</span><span class="tag-sym">溫疫</span><span class="tag-sym">溫毒</span><span class="tag-sym">暑溫</span><span class="tag-sym">濕溫</span><span class="tag-sym">秋燥</span><span class="tag-sym">冬溫</span><span class="tag-sym">溫瘧</span>。</p>
+        <p>這九種雖然名字不同，共通點是都屬於「熱性病」。之前的醫生習慣一律套用《傷寒論》的方子來治，結果常常治錯。作者認為必須另立規則，按三焦來區分治法。</p>
+        <p>簡單說：風溫是春天的熱病、溫疫是會傳染的熱病、溫毒帶毒素最嚴重、暑溫是夏天的熱病偏熱型、濕溫是夏末的熱病偏濕型、秋燥是秋天乾燥引起的病。</p>
+      </div>
+      <details>
+        <summary class="orig-toggle">查看原文</summary>
+        <div class="original-block">
+          <span class="orig-label">原文</span>
+          溫病者：有風溫、有溫熱、有溫疫、有溫毒、有暑溫、有濕溫、有秋燥、有冬溫、有溫瘧……風溫者，初春陽氣始開，厥陰行令，風夾溫也。溫熱者，春末夏初，陽氣弛張，溫盛為熱也……
+        </div>
+      </details>
+    </div>
+
+    <!-- 條2 -->
+    <div class="condition">
+      <div class="condition-header">
+        <span class="cond-num">條 二</span>
+        <span class="cond-title">溫病起病在上焦肺</span>
+      </div>
+      <div class="plain-block">
+        <span class="plain-label">白話解說</span>
+        <p>溫病和傷寒最大的差異在於「入侵路徑」不同。</p>
+        <p><strong>傷寒</strong>：寒邪從皮膚毛孔進來，先傷足太陽膀胱經，病從下往上傳。</p>
+        <p><strong>溫病</strong>：熱邪從口鼻吸入，先傷手太陰肺經，病從上往下傳。</p>
+        <p>所以治傷寒要照張仲景的「六經傳變」來看，治溫病則要照劉河間的「三焦」來看——這是完全不同的兩套系統，不能混用。</p>
+      </div>
+      <details>
+        <summary class="orig-toggle">查看原文</summary>
+        <div class="original-block">
+          <span class="orig-label">原文</span>
+          凡病溫者，始於上焦，在手太陰。傷寒由毛竅而入，自下而上，始足太陽……溫病由口鼻而入，自上而下，鼻通於肺，始手太陰……
+        </div>
+      </details>
+    </div>
+
+    <!-- 條3 -->
+    <div class="condition">
+      <div class="condition-header">
+        <span class="cond-num">條 三</span>
+        <span class="cond-title">太陰溫病的診斷標準</span>
+      </div>
+      <div class="plain-block">
+        <span class="plain-label">白話解說</span>
+        <p>怎麼知道這是溫病而不是傷寒？主要看這幾個點：</p>
+        <p>脈象：不慢不緊，但跳得很快（脈數）。有時兩手的寸脈特別大。</p>
+        <p>症狀：<span class="tag-sym">頭痛</span><span class="tag-sym">微惡風寒</span><span class="tag-sym">身熱</span><span class="tag-sym">自汗</span><span class="tag-sym">口渴</span><span class="tag-sym">咳嗽</span>，下午以後熱得更厲害。</p>
+        <p>關鍵鑑別：傷寒和溫病都有頭痛、怕冷、發熱——但溫病的「怕冷」程度輕，且有<span class="tag-sym">口渴</span>和<span class="tag-sym">下午熱甚</span>；傷寒則不渴、項強，且怕冷很明顯。</p>
+        <p>前臂皮膚（尺膚）摸起來熱，這是熱邪傷陰的信號。</p>
+      </div>
+      <details>
+        <summary class="orig-toggle">查看原文</summary>
+        <div class="original-block">
+          <span class="orig-label">原文</span>
+          太陰之為病，脈不緩不緊而動數，或兩寸獨大，尺膚熱，頭痛，微惡風寒，身熱自汗，口渴，或不渴，而咳，午後熱甚者，名曰溫病。
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CHAPTER 2 -->
+  <section class="chapter" id="yinqiao">
+    <div class="chapter-head">
+      <span class="chapter-num">第二章</span>
+      <h2>初期治法：辛涼解表</h2>
+    </div>
+
+    <!-- 條4 桂枝/銀翹散 -->
+    <div class="condition">
+      <div class="condition-header">
+        <span class="cond-num">條 四</span>
+        <span class="cond-title">初起的兩種情況：桂枝湯或銀翹散</span>
+      </div>
+      <div class="plain-block">
+        <span class="plain-label">白話解說</span>
+        <p>溫病初起，根據是否還有怕冷症狀來選方：</p>
+        <p><strong>情況A</strong>：還在怕風怕冷，代表身體表面還有一點外寒，用 <span class="tag-herb">桂枝湯</span>（辛溫解肌，讓微汗出、寒去）。</p>
+        <p><strong>情況B</strong>：只發熱、不怕冷、口渴，代表單純是溫熱邪氣，用 <span class="tag-herb">銀翹散</span>（辛涼清透，清熱解毒）。</p>
+        <p><span class="tag-warn">注意</span> 溫病最忌強行發汗！溫病的熱已經傷了陰液，再讓大汗一出，不只沒用，還會損傷心陽，引發神昏、發狂，甚至內閉外脫（休克）。</p>
+      </div>
+
+      <div class="rx-block">
+        <span class="rx-label">方劑</span>
+        <div class="rx-name">銀翹散（辛涼平劑）</div>
+        <div class="rx-herbs">
+          <span class="rx-herb-tag">連翹 一兩</span>
+          <span class="rx-herb-tag">銀花 一兩</span>
+          <span class="rx-herb-tag">桔梗 六錢</span>
+          <span class="rx-herb-tag">薄荷 六錢</span>
+          <span class="rx-herb-tag">竹葉 四錢</span>
+          <span class="rx-herb-tag">生甘草 五錢</span>
+          <span class="rx-herb-tag">荊芥穗 四錢</span>
+          <span class="rx-herb-tag">淡豆豉 五錢</span>
+          <span class="rx-herb-tag">牛蒡子 六錢</span>
+        </div>
+        <p class="rx-note">研成粗粉，每次六錢，用新鮮蘆根煎湯，香氣一出立即服用，<strong>不要久煎</strong>（肺藥宜輕清，煮太久藥性就入中焦了）。病重者每兩小時一次；輕者每三小時一次。</p>
+      </div>
+
+      <details>
+        <summary class="orig-toggle">查看原文</summary>
+        <div class="original-block">
+          <span class="orig-label">原文</span>
+          太陰風溫、溫熱、溫疫、冬溫，初起惡風寒者，桂枝湯主之；但熱不惡寒而渴者，辛涼平劑銀翹散主之……溫病忌汗，汗之不惟不解，反生他患……溫病最善傷陰，用藥又復傷陰，豈非為賊立幟乎？
+        </div>
+      </details>
+    </div>
+
+    <!-- 條5 桑菊飲 -->
+    <div class="condition">
+      <div class="condition-header">
+        <span class="cond-num">條 五</span>
+        <span class="cond-title">輕症咳嗽：桑菊飲</span>
+      </div>
+      <div class="plain-block">
+        <span class="plain-label">白話解說</span>
+        <p>如果症狀輕微：只有咳嗽，發熱不嚴重，口渴也不明顯——病情淺，不需要銀翹散這麼重的藥，用更輕的 <span class="tag-herb">桑菊飲</span> 就好。</p>
+        <p>桑葉：能平肝風、走肺絡、宣肺氣。菊花：養肺補腎、味甘清透。兩者搭配，清透上焦而不傷正氣。</p>
+        <p>當時很多醫生用辛溫的「杏蘇散」統治所有咳嗽，作者認為這是錯的——杏蘇散適合風寒咳嗽，溫病咳嗽是熱傷肺絡，用辛溫反而燒傷肺液，久咳成癆。</p>
+      </div>
+
+      <div class="rx-block">
+        <span class="rx-label">方劑</span>
+        <div class="rx-name">桑菊飲（辛涼輕劑）</div>
+        <div class="rx-herbs">
+          <span class="rx-herb-tag">杏仁 二錢</span>
+          <span class="rx-herb-tag">連翹 一錢五分</span>
+          <span class="rx-herb-tag">薄荷 八分</span>
+          <span class="rx-herb-tag">桑葉 二錢五分</span>
+          <span class="rx-herb-tag">菊花 一錢</span>
+          <span class="rx-herb-tag">桔梗 二錢</span>
+          <span class="rx-herb-tag">甘草 八分</span>
+          <span class="rx-herb-tag">蘆根 二錢</span>
+        </div>
+        <p class="rx-note">水兩杯，煮成一杯，每日服兩次。若兩三日不退、氣粗喘息，加石膏、知母；舌色深紅（入營）加元參、犀角；肺熱甚加黃芩；口渴加天花粉。</p>
+      </div>
+
+      <details>
+        <summary class="orig-toggle">查看原文</summary>
+        <div class="original-block">
+          <span class="orig-label">原文</span>
+          太陰風溫，但咳，身不甚熱，微渴者，辛涼輕劑桑菊飲主之。咳，熱傷肺絡也。身不甚熱，病不重也。渴而微，熱不甚也。恐病輕藥重，故另立輕劑方。
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CHAPTER 3 -->
+  <section class="chapter" id="baihu">
+    <div class="chapter-head">
+      <span class="chapter-num">第三章</span>
+      <h2>氣分熱盛：白虎湯諸條</h2>
+    </div>
+
+    <!-- 條6 白虎湯 -->
+    <div class="condition">
+      <div class="condition-header">
+        <span class="cond-num">條 六</span>
+        <span class="cond-title">高熱大汗：白虎湯</span>
+      </div>
+      <div class="plain-block">
+        <span class="plain-label">白話解說</span>
+        <p>病情加重，進入「氣分熱盛」階段，表現為：<span class="tag-sym">脈浮洪</span><span class="tag-sym">舌苔黃</span><span class="tag-sym">大渴</span><span class="tag-sym">大汗</span><span class="tag-sym">臉紅</span><span class="tag-sym">很怕熱</span>——這是白虎湯的指徵。</p>
+        <p>用 <span class="tag-herb">白虎湯</span>（大量石膏＋知母）來猛力清氣分的熱。石膏清而涼，知母苦而清，合用退熱保津，效果猛烈如白虎。</p>
+      </div>
+
+      <div class="rx-block">
+        <span class="rx-label">方劑</span>
+        <div class="rx-name">白虎湯（辛涼重劑）</div>
+        <div class="rx-herbs">
+          <span class="rx-herb-tag">生石膏 一兩（研細）</span>
+          <span class="rx-herb-tag">知母 五錢</span>
+          <span class="rx-herb-tag">生甘草 三錢</span>
+          <span class="rx-herb-tag">白粳米 一合</span>
+        </div>
+        <p class="rx-note">水八杯，煮取三杯，分三次溫服。症狀退了就減量，不退再服。</p>
+      </div>
+
+      <details>
+        <summary class="orig-toggle">查看原文</summary>
+        <div class="original-block">
+          <span class="orig-label">原文</span>
+          太陰溫病，脈浮洪，舌黃，渴甚，大汗，面赤，惡熱者，辛涼重劑白虎湯主之。
+        </div>
+      </details>
+    </div>
+
+    <!-- 條7 白虎加人參湯 -->
+    <div class="condition">
+      <div class="condition-header">
+        <span class="cond-num">條 七</span>
+        <span class="cond-title">熱盛且氣虛：白虎加人參湯</span>
+      </div>
+      <div class="plain-block">
+        <span class="plain-label">白話解說</span>
+        <p>如果出現：<span class="tag-sym">脈浮大中空（芤脈）</span><span class="tag-sym">汗出如湧</span><span class="tag-sym">輕微喘息</span><span class="tag-sym">鼻翼煽動</span>——這代表不只是熱，正氣也快撐不住了（「化源欲絕」）。</p>
+        <p>這時光用白虎退熱還不夠，必須加 <span class="tag-herb">人參</span> 來扶正固陽。人參固住陽氣，才能帶動陰液的生成，這是「救化源」的關鍵一步。</p>
+        <p>脈若散大（更危急）：人參劑量要加倍。</p>
+      </div>
+      <details>
+        <summary class="orig-toggle">查看原文</summary>
+        <div class="original-block">
+          <span class="orig-label">原文</span>
+          太陰溫病，脈浮大而芤，汗大出，微喘，甚至鼻孔扇者，白虎加人參湯主之；脈若散大者，急用之，倍人參。
+        </div>
+      </details>
+    </div>
+
+    <!-- 條8 白虎禁忌 -->
+    <div class="condition">
+      <div class="condition-header">
+        <span class="cond-num">條 八</span>
+        <span class="cond-title">白虎湯的禁忌（非常重要）</span>
+      </div>
+      <div class="plain-block">
+        <span class="plain-label">白話解說</span>
+        <p>白虎湯雖然好用，但有四個情況<span class="tag-warn">絕對禁用</span>：</p>
+        <p>❶ 脈浮弦而細（細脈代表陰虛或津傷）❷ 脈沉（邪在裡，不在氣分）❸ 不渴（熱未傷津）❹ 無汗（熱未到外透的程度）</p>
+        <p>白虎湯性極寒涼，用錯了禍不旋踵。膽小的醫生不敢用，因此坐誤良機；魯莽的醫生不問脈証就亂用，甚至一次用石膏一斤以上，用對了立竿見影，用錯了也立死。</p>
+      </div>
+      <details>
+        <summary class="orig-toggle">查看原文</summary>
+        <div class="original-block">
+          <span class="orig-label">原文</span>
+          白虎本為達熱出表，若其人脈浮弦而細者，不可與也；脈沉者，不可與也；不渴者，不可與也；汗不出者，不可與也；常須識此，勿令誤也。
+        </div>
+      </details>
+    </div>
+
+    <!-- 條9 氣血兩燔 -->
+    <div class="condition">
+      <div class="condition-header">
+        <span class="cond-num">條 九</span>
+        <span class="cond-title">氣血同時熱盛：玉女煎加減</span>
+      </div>
+      <div class="plain-block">
+        <span class="plain-label">白話解說</span>
+        <p>若氣分和血分都熱（氣血兩燔），不能只治一邊，要氣血同治，用 <span class="tag-herb">玉女煎</span> 加減。</p>
+        <p>原方去牛膝（牛膝走下焦，不適合上焦病）；把熟地改為細生地（質輕、涼而不溫）；加元參（壯水制火，預防咽痛出血）。</p>
+      </div>
+
+      <div class="rx-block">
+        <span class="rx-label">方劑</span>
+        <div class="rx-name">玉女煎去牛膝熟地加細生地元參方</div>
+        <div class="rx-herbs">
+          <span class="rx-herb-tag">生石膏 一兩</span>
+          <span class="rx-herb-tag">知母 四錢</span>
+          <span class="rx-herb-tag">元參 四錢</span>
+          <span class="rx-herb-tag">細生地 六錢</span>
+          <span class="rx-herb-tag">麥冬 六錢</span>
+        </div>
+      </div>
+      <details>
+        <summary class="orig-toggle">查看原文</summary>
+        <div class="original-block">
+          <span class="orig-label">原文</span>
+          太陰溫病，氣血兩燔者，玉女煎去牛膝加元參主之。
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CHAPTER 4 -->
+  <section class="chapter" id="bleeding">
+    <div class="chapter-head">
+      <span class="chapter-num">第四章</span>
+      <h2>血分病變：出血與斑疹</h2>
+    </div>
+
+    <!-- 條10 -->
+    <div class="condition">
+      <div class="condition-header">
+        <span class="cond-num">條 十</span>
+        <span class="cond-title">熱迫血上溢：犀角地黃湯合銀翹散</span>
+      </div>
+      <div class="plain-block">
+        <span class="plain-label">白話解說</span>
+        <p>熱邪進入血分，逼血上衝，出現從口鼻出血（衄血、咯血等），治法是：<span class="tag-herb">銀翹散</span> 清溫毒，<span class="tag-herb">犀角地黃湯</span> 清血分伏熱、涼血止血。</p>
+        <p>有兩種情況預後極差（死証）：</p>
+        <p>① 吐出粉紅色血水——這不是純血也不是液，是血和津液一起被熱逼出來，說明肺的生化之源已快耗盡。</p>
+        <p>② 出血同時脈跳每分鐘極快（七八至以上）、臉反而變黑——火熱至極反現水色，腎陰耗竭、肺金不支。</p>
+        <p>這兩種情況，上焦氣機化源斷絕，是溫病第一死法。</p>
+      </div>
+      <details>
+        <summary class="orig-toggle">查看原文</summary>
+        <div class="original-block">
+          <span class="orig-label">原文</span>
+          太陰溫病，血從上溢者，犀角地黃湯合銀翹散主之……若吐粉紅血水者，死不治；血從上溢，脈七八至以上，面反黑者，死不治……化源絕，乃溫病第一死法也。
+        </div>
+      </details>
+    </div>
+
+    <!-- 條11 滋液 -->
+    <div class="condition">
+      <div class="condition-header">
+        <span class="cond-num">條 十一</span>
+        <span class="cond-title">口渴嚴重、咳白黏痰：食療救液</span>
+      </div>
+      <div class="plain-block">
+        <span class="plain-label">白話解說</span>
+        <p>熱傷津液導致口渴很嚴重，或吐白色黏稠痰沫不爽利——這時可以用食物來補充津液（甘寒救液法）：</p>
+        <p><span class="tag-herb">雪梨漿</span>：把大甜梨切薄片，泡在新汲取的涼水裡半天，頻繁小口飲用。</p>
+        <p><span class="tag-herb">五汁飲</span>：梨汁＋荸薺汁＋鮮蘆根汁＋麥冬汁＋藕汁（或甘蔗汁），調勻後涼服，不喜涼者可隔水溫熱。</p>
+      </div>
+      <details>
+        <summary class="orig-toggle">查看原文</summary>
+        <div class="original-block">
+          <span class="orig-label">原文</span>
+          太陰溫病，口渴甚者，雪梨漿沃之；吐白沫粘滯不快者，五汁飲沃之。此皆甘寒救液法也。
+        </div>
+      </details>
+    </div>
+
+    <!-- 條12 發斑疹 -->
+    <div class="condition">
+      <div class="condition-header">
+        <span class="cond-num">條 十二</span>
+        <span class="cond-title">誤汗後發斑發疹</span>
+      </div>
+      <div class="plain-block">
+        <span class="plain-label">白話解說</span>
+        <p>如果誤用發汗法：</p>
+        <p><strong>汗發不出來</strong>：熱邪鬱在血分，必然發斑（大片暗紅，平鋪於皮膚）或發疹（小紅點高起）。發斑用 <span class="tag-herb">化斑湯</span>，發疹用 <span class="tag-herb">銀翹散加減</span>。</p>
+        <p><strong>汗出太多</strong>：心陽受傷→神昏；心陰受傷→譫語（說胡話），用 <span class="tag-herb">清宮湯</span> 或安宮牛黃丸、紫雪丹、至寶丹。</p>
+        <p>斑和疹的差異：斑是整片赤色、平鋪皮膚，屬肌肉病；疹是紅點凸起，屬血絡病。溫病中發疹者佔七、八成，發斑只有二、三成。</p>
+        <p><span class="tag-warn">絕對禁用</span>升麻、柴胡、當歸、防風、羌活、白芷、葛根、三春柳——這些都是辛溫升發藥，溫病熱邪已在往上衝，再用升提只會加速傷陰。</p>
+      </div>
+
+      <div class="rx-block">
+        <span class="rx-label">化斑湯組成</span>
+        <div class="rx-herbs">
+          <span class="rx-herb-tag">石膏 一兩</span>
+          <span class="rx-herb-tag">知母 四錢</span>
+          <span class="rx-herb-tag">生甘草 三錢</span>
+          <span class="rx-herb-tag">元參 三錢</span>
+          <span class="rx-herb-tag">犀角 二錢</span>
+          <span class="rx-herb-tag">白粳米 一合</span>
+        </div>
+      </div>
+
+      <details>
+        <summary class="orig-toggle">查看原文</summary>
+        <div class="original-block">
+          <span class="orig-label">原文</span>
+          太陰溫病，不可發汗，發汗而汗不出者，必發斑疹，汗出過多者，必神昏譫語……禁升麻、柴胡、當歸、防風、羌活、白芷、葛根、三春柳。
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CHAPTER 5 -->
+  <section class="chapter" id="shenhin">
+    <div class="chapter-head">
+      <span class="chapter-num">第五章</span>
+      <h2>心包病變：神昏與痰熱</h2>
+    </div>
+
+    <!-- 條13 梔子豉湯 -->
+    <div class="condition">
+      <div class="condition-header">
+        <span class="cond-num">條 十三</span>
+        <span class="cond-title">熱鬱膈中、心煩失眠</span>
+      </div>
+      <div class="plain-block">
+        <span class="plain-label">白話解說</span>
+        <p>病程二、三日後，舌苔微黃、寸脈大，出現：<span class="tag-sym">心煩悶</span><span class="tag-sym">坐立不安</span><span class="tag-sym">想嘔吐但吐不出來</span>——熱邪停在胸膈之間。</p>
+        <p>治法：「在上者因而越之」——用 <span class="tag-herb">梔子豉湯</span> 引邪上湧而出（涌吐法）。</p>
+      </div>
+      <div class="rx-block">
+        <span class="rx-label">方劑</span>
+        <div class="rx-name">梔子豉湯</div>
+        <div class="rx-herbs">
+          <span class="rx-herb-tag">梔子 五枚（搗碎）</span>
+          <span class="rx-herb-tag">香豆豉 六錢</span>
+        </div>
+        <p class="rx-note">先煮梔子，後下香豉，取兩杯。先溫服一杯，若吐出，停服第二杯。</p>
+      </div>
+      <details>
+        <summary class="orig-toggle">查看原文</summary>
+        <div class="original-block">
+          <span class="orig-label">原文</span>
+          太陰病得之二三日，舌微黃，寸脈盛，心煩懊憹，起臥不安，欲嘔不得嘔，無中焦証，梔子豉湯主之。在上者因而越之，故涌之以梔子，開之以香豉。
+        </div>
+      </details>
+    </div>
+
+    <!-- 條14 瓜蒂散 -->
+    <div class="condition">
+      <div class="condition-header">
+        <span class="cond-num">條 十四</span>
+        <span class="cond-title">痰涎壅盛、胸悶欲嘔（重症）</span>
+      </div>
+      <div class="plain-block">
+        <span class="plain-label">白話解說</span>
+        <p>和上條比，這條更嚴重：不只煩躁，還有大量痰涎、胸口塞感嚴重。這時梔子豉湯力道不夠，要改用 <span class="tag-herb">瓜蒂散</span> 急吐——怕邪氣入心包，引發痙厥。</p>
+        <p>體虛者加人參蘆（蘆根性近吐，但加人參保護正氣）。</p>
+      </div>
+      <details>
+        <summary class="orig-toggle">查看原文</summary>
+        <div class="original-block">
+          <span class="orig-label">原文</span>
+          太陰病得之二三日，心煩不安；痰涎壅盛，胸中痞塞欲嘔者，無中焦証，瓜蒂散主之，虛者加參蘆。
+        </div>
+      </details>
+    </div>
+
+    <!-- 條15 熱入營 -->
+    <div class="condition">
+      <div class="condition-header">
+        <span class="cond-num">條 十五</span>
+        <span class="cond-title">熱入營分，不渴反常</span>
+      </div>
+      <div class="plain-block">
+        <span class="plain-label">白話解說</span>
+        <p>溫病本來應該口渴，若突然「不渴了」，要提高警覺——舌頭卻是絳紅色且乾燥、兩寸脈大，這反常的「不渴」，其實是熱邪已深入營分，蒸腾的營氣上承，暫時補了口液，所以感覺不渴了。</p>
+        <p>這是病情加重的信號，用 <span class="tag-herb">清營湯去黃連</span>（去黃連是怕它苦燥，引邪深入血分）。</p>
+      </div>
+      <details>
+        <summary class="orig-toggle">查看原文</summary>
+        <div class="original-block">
+          <span class="orig-label">原文</span>
+          太陰溫病，寸脈大，舌絳而干，法當渴，今反不渴者，熱在營中也，清營湯去黃連主之。渴乃溫之本病，今反不渴，蓋邪熱入營蒸騰，營氣上升，故不渴……
+        </div>
+      </details>
+    </div>
+
+    <!-- 條16 安宮 -->
+    <div class="condition">
+      <div class="condition-header">
+        <span class="cond-num">條 十六</span>
+        <span class="cond-title">神昏：清宮湯與三寶</span>
+      </div>
+      <div class="plain-block">
+        <span class="plain-label">白話解說</span>
+        <p>熱邪入心包，導致意識不清（神昏）、說胡話（譫語），用 <span class="tag-herb">清宮湯</span> 清心開竅，或三大急救成藥：</p>
+        <p><span class="tag-herb">安宮牛黃丸</span>：清熱解毒開竅，芳香化穢。用於高熱神昏、熱閉心包（熱性昏迷，現代多用於腦炎、腦膜炎等）。</p>
+        <p><span class="tag-herb">紫雪丹</span>：清熱鎮痙，開竅定驚。用於高熱驚厥（痙攣）。</p>
+        <p><span class="tag-herb">至寶丹</span>：芳香辟穢，化痰開竅。用於痰濁阻竅引起的昏迷（濕濁偏重型）。</p>
+
+        <div class="special-box">
+          <h3>三寶的選用口訣</h3>
+          <ul>
+            <li><strong>安宮牛黃丸</strong>——最涼，熱閉最重，「高熱神昏最先選」</li>
+            <li><strong>紫雪丹</strong>——善治驚厥抽搐，「有抽先想紫雪」</li>
+            <li><strong>至寶丹</strong>——芳香化濁，「痰多昏沉靠至寶」</li>
+          </ul>
+        </div>
+      </div>
+      <details>
+        <summary class="orig-toggle">查看原文</summary>
+        <div class="original-block">
+          <span class="orig-label">原文</span>
+          神昏譫語者，清宮湯主之，牛黃丸、紫雪丹、局方至寶丹亦主之……此鹹寒甘苦法，清膻中之方也。謂之清宮者，以膻中為心之宮城也……
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CHAPTER 6 -->
+  <section class="chapter" id="shidu">
+    <div class="chapter-head">
+      <span class="chapter-num">第六章</span>
+      <h2>濕溫：特殊的棘手病</h2>
+    </div>
+
+    <div class="condition">
+      <div class="condition-header">
+        <span class="cond-num">條 四三</span>
+        <span class="cond-title">濕溫的辨識與三仁湯</span>
+      </div>
+      <div class="plain-block">
+        <span class="plain-label">白話解說</span>
+        <p>濕溫最難治，因為它容易被誤診，且「怎麼治怎麼錯」。</p>
+        <p>特徵：<span class="tag-sym">頭痛</span><span class="tag-sym">怕冷</span><span class="tag-sym">身體沉重痠痛</span><span class="tag-sym">舌苔白膩</span><span class="tag-sym">不口渴</span><span class="tag-sym">脈弦細濡</span><span class="tag-sym">臉色淡黃</span><span class="tag-sym">胸悶不想吃飯</span><span class="tag-sym">下午開始發熱</span>。</p>
+        <p>它看起來像陰虛，又像風寒，但三種常見治法全部錯：</p>
+        <p>❌ <strong>發汗</strong>→神昏耳聾，甚至閉眼不說話（汗傷陽，濕邪更盛）</p>
+        <p>❌ <strong>攻下</strong>→腹瀉不止（傷脾陽，濕無出路）</p>
+        <p>❌ <strong>滋陰潤法</strong>→病情更深陷（滋膩助濕）</p>
+        <p>正確治法：<span class="tag-herb">三仁湯</span>——宣暢氣機、化濕清熱。這個方不管夏末、深秋、甚至冬天，只要是濕溫，都適用。</p>
+      </div>
+
+      <div class="rx-block">
+        <span class="rx-label">方劑</span>
+        <div class="rx-name">三仁湯（濕溫主方）</div>
+        <div class="rx-herbs">
+          <span class="rx-herb-tag">杏仁 宣上焦</span>
+          <span class="rx-herb-tag">白蔻仁 暢中焦</span>
+          <span class="rx-herb-tag">薏苡仁 滲下焦</span>
+          <span class="rx-herb-tag">半夏 化痰燥濕</span>
+          <span class="rx-herb-tag">厚朴 行氣除濕</span>
+          <span class="rx-herb-tag">通草 利水</span>
+          <span class="rx-herb-tag">滑石 清熱利濕</span>
+          <span class="rx-herb-tag">竹葉 清心除煩</span>
+        </div>
+        <p class="rx-note">三仁湯的核心是「開上、暢中、滲下」——三個仁分別對應三焦，讓濕邪有出路走，而不是強行攻伐。</p>
+      </div>
+
+      <details>
+        <summary class="orig-toggle">查看原文</summary>
+        <div class="original-block">
+          <span class="orig-label">原文</span>
+          頭痛惡寒，身重疼痛，舌白不渴，脈弦細而濡，面色淡黃，胸悶不饑，午後身熱，狀若陰虛，病難速已，名曰濕溫。汗之則神昏耳聾，甚則目瞑不欲言，下之則洞泄，潤之則病深不解，長夏深秋冬日同法，三仁湯主之。
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CHAPTER 7 -->
+  <section class="chapter" id="warning">
+    <div class="chapter-head">
+      <span class="chapter-num">總結</span>
+      <h2>上焦篇核心禁忌與要點</h2>
+    </div>
+
+    <div class="special-box">
+      <h3>上焦篇五大核心原則</h3>
+      <ul>
+        <li><strong>溫病忌汗</strong>：溫邪從口鼻入、非表邪，強發汗傷陽傷陰，可致神昏、斑疹、內閉外脫</li>
+        <li><strong>辛涼為正法</strong>：治溫用辛涼（銀翹散、桑菊飲），絕非辛溫。病重用石膏，輕症用桑葉菊花</li>
+        <li><strong>白虎有嚴格指徵</strong>：大熱、大渴、大汗、脈洪——四大証齊，方可用。脈細、不渴、無汗皆禁</li>
+        <li><strong>濕溫禁汗、禁下、禁滋潤</strong>：三仁湯宣化三焦是唯一正道</li>
+        <li><strong>神昏三寶各有主治</strong>：熱閉→安宮，驚厥→紫雪，痰濁→至寶</li>
+      </ul>
+    </div>
+
+    <div class="special-box" style="margin-top:28px; background: linear-gradient(135deg, #1a3a2a 0%, #0f2018 100%);">
+      <h3>衛氣營血四層傳變速覽</h3>
+      <ul>
+        <li><strong>衛分（最表淺）</strong>：發熱、微惡寒、口渴、咳嗽 → 銀翹散、桑菊飲</li>
+        <li><strong>氣分（中期）</strong>：高熱、大渴、大汗、脈洪 → 白虎湯</li>
+        <li><strong>營分（深入）</strong>：舌絳、神昏初現、反不渴 → 清營湯</li>
+        <li><strong>血分（最深）</strong>：出血、發斑、神昏昏迷 → 犀角地黃湯、三寶</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  《溫病條辨・上焦篇》白話解說　依清・吳鞠通原著整理　本頁僅供學習參考，非臨床處方依據
+</footer>
+
+</body>
+</html>
