@@ -25,9 +25,10 @@
 
 > ⚠️ **關於頌數**：坊間常見「51 頌」「52 頌」的說法。差異來自**第四流的結頌算不算正文**、以及 **3.1 與 3.2 是否合併**。本檔採 GRETIL 與 Kṣemarāja 註釋本一致的分法：**53**。
 
-**另有兩份已定位、本檔未收的材料**：
-- **Kṣemarāja《Spandanirṇaya》註釋本**（GRETIL，`sa_vasugupta-spandakArikA-comm.txt`，90,339 字元，同授權）——逐頌註釋
-- **KSTS（Kashmir Series of Texts and Studies）刊本**，附 Rāmakaṇṭha 的 Vivṛti，天城體，**CC0 公有領域**，archive.org 項目 `SpandaKarikaKSTS`（PDF 25.5 MB）
+**配套材料（2026-10-12 已一併收入本資料夾）**：
+- **[振動抉擇-Spandanirṇaya-Kṣemarāja註.md](振動抉擇-Spandanirṇaya-Kṣemarāja註.md)**——**Kṣemarāja（約 11 世紀）的逐頌註釋，53 頌全註、493 段**，GRETIL 同授權。**原頌 3,000 字元，註釋 90,000 字元，是原典的 30 倍。**
+- **[振動頌-KSTS刊本-天城體.pdf](振動頌-KSTS刊本-天城體.pdf)**——**Kashmir Series of Texts and Studies 刊本**，附 **Rāmakaṇṭha 的 Vivṛti**，**天城體掃描，176 頁，24.3 MiB**。**CC0 公有領域**——頁腳即印有「**CC-0 Kashmir Research Institute. Digitized by eGangotri**」（archive.org 項目 `SpandaKarikaKSTS`）。
+  ⚠️ **是舊藏書的掃描**：多頁有前人的手寫眉批，偶有翻頁的手指入鏡；**無文字層**（純影像），其 archive.org 自動 OCR 的英文部分全部亂碼，**不可用**。
 
 ---
 
@@ -343,7 +344,8 @@
 - **作者是 Vasugupta 還是 Kallaṭa——學界未定，本檔不選邊**
 - **所有工作譯文都是我做的，未經梵文學者校訂。** 1.1 的「張目／閉目」讀法雖是本派通說，仍請以已出版譯本覆核
 - **未與任何天城體刊本逐字校對。** GRETIL 檔由 Marino Faliero 於 1998 年輸入，其底本未在檔頭註明（`Source: - .` 為空）——**這是本檔最大的文獻學弱點**
-- **Kṣemarāja 註釋本（90,339 字元）與 KSTS 的 PDF，本次未收入本資料夾**
+- ~~Kṣemarāja 註釋本與 KSTS 的 PDF，本次未收入本資料夾~~ → **2026-10-12 已補收，見上方「配套材料」**
+- **KSTS 刊本為掃描 PDF，無文字層**，其 archive.org OCR 文字檔品質極差（英文部分全部亂碼），**本檔未採用該 OCR**
 
 ## 一句話
 
