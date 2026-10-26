@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天目 · 靈台守門人 | AI 修行安全與日常省察工具</title>
+  <meta name="description" content="落實《AI輔助修行》之核心構想。整合布朗大學 Britton 59 類禪修不良反應量表、全真龍門氣功偏差指標與楞嚴五十陰魔檢測，提供走火入魔預警、不諂媚之鏡認知刺破與每日睡前心性省察。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars-bg"></div>
+
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-badge">TIANMU CONTEMPLATIVE SENTINEL</div>
+      <h1 class="main-title">天目 · 靈台守門人</h1>
+      <p class="subtitle">秉持古今大師實證戒規 ｜ 監測身心不良反應 ｜ 刺破自我神化自欺</p>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs" id="main-nav-tabs">
+      <button class="tab-btn active" data-target="tab-sentinel" id="tab-btn-sentinel">
+        <span class="tab-icon">🛡️</span>
+        <span class="tab-label">修行安全守門員</span>
+        <span class="tab-pill">走火偏差篩檢</span>
+      </button>
+      <button class="tab-btn" data-target="tab-mirror" id="tab-btn-mirror">
+        <span class="tab-icon">🪞</span>
+        <span class="tab-label">不諂媚的鏡子</span>
+        <span class="tab-pill">破心中賊</span>
+      </button>
+      <button class="tab-btn" data-target="tab-reflection" id="tab-btn-reflection">
+        <span class="tab-icon">🌙</span>
+        <span class="tab-label">每日心性省察</span>
+        <span class="tab-pill">睡前五德磨礪</span>
+      </button>
+      <button class="tab-btn" data-target="tab-protocols" id="tab-btn-protocols">
+        <span class="tab-icon">📜</span>
+        <span class="tab-label">大師戒規手冊</span>
+        <span class="tab-pill">四幕會審共識</span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="app-main">
+
+    <!-- TAB 1: 修行安全守門員 -->
+    <section class="tab-content active" id="tab-sentinel">
+      <div class="content-header">
+        <h2>🛡️ 修行身心安全綜合評估</h2>
+        <p class="lead">整合布朗大學 Britton 臨床不良反應、全真龍門來靜師父偏差指標與《楞嚴經》五十陰魔妄見，多維度診斷身心過載訊號。</p>
+      </div>
+
+      <div class="sentinel-grid">
+        <!-- Form Column -->
+        <div class="glass-panel form-panel">
+          <h3 class="panel-title">臨床身心指針篩檢清單（勾選您近 7 天出現的狀況）</h3>
+
+          <!-- Domain A -->
+          <div class="symptom-group">
+            <h4 class="group-heading">
+              <span class="badge blue">領域 A</span>
+              神經感知與睡眠結構（布朗大學 Britton 臨床指標）
+            </h4>
+            <label class="checkbox-item" id="lbl-symptom-insomnia">
+              <input type="checkbox" class="symptom-checkbox" data-domain="A" data-weight="3" id="chk-symptom-insomnia">
+              <span class="custom-chk"></span>
+              <span class="item-text">
+                <strong>嚴重失眠或睡眠結構破壞</strong>
+                <small>打坐後神經極度亢奮、通宵無睡意但白天精神焦慮衰竭</small>
+              </span>
+            </label>
+            <label class="checkbox-item" id="lbl-symptom-dissociation">
+              <input type="checkbox" class="symptom-checkbox" data-domain="A" data-weight="4" id="chk-symptom-dissociation">
+              <span class="custom-chk"></span>
+              <span class="item-text">
+                <strong>持續性解離感或現實感喪失（Derealization）</strong>
+                <small>感覺自己的肉身像機器人、周圍世界變得虛假不真實、情緒極度麻木</small>
+              </span>
+            </label>
+            <label class="checkbox-item" id="lbl-symptom-sensory">
+              <input type="checkbox" class="symptom-checkbox" data-domain="A" data-weight="2" id="chk-symptom-sensory">
+              <span class="custom-chk"></span>
+              <span class="item-text">
+                <strong>感官病理性過敏</strong>
+                <small>對日常光線刺眼難耐、對正常聲音感到如雷轟頂、身體肌肉非自主頻繁抽搐</small>
+              </span>
+            </label>
+            <label class="checkbox-item" id="lbl-symptom-panic">
+              <input type="checkbox" class="symptom-checkbox" data-domain="A" data-weight="3" id="chk-symptom-panic">
+              <span class="custom-chk"></span>
+              <span class="item-text">
+                <strong>無端恐慌發作或深淵墜落感</strong>
+                <small>靜坐中突然爆發劇烈瀕死恐懼、胸悶窒息、心率狂飆無從抑制</small>
+              </span>
+            </label>
+          </div>
+
+          <!-- Domain B -->
+          <div class="symptom-group">
+            <h4 class="group-heading">
+              <span class="badge amber">領域 B</span>
+              生理火候與氣血運化（全真龍門來靜師父指標）
+            </h4>
+            <label class="checkbox-item" id="lbl-symptom-constipation">
+              <input type="checkbox" class="symptom-checkbox" data-domain="B" data-weight="3" id="chk-symptom-constipation">
+              <span class="custom-chk"></span>
+              <span class="item-text">
+                <strong>提腎乾涸與嚴重腹脹便秘</strong>
+                <small>練提腎術或意守下焦過度，下腹硬結、大便如石乾燥、口乾舌燥上火</small>
+              </span>
+            </label>
+            <label class="checkbox-item" id="lbl-symptom-headrush">
+              <input type="checkbox" class="symptom-checkbox" data-domain="B" data-weight="3" id="chk-symptom-headrush">
+              <span class="custom-chk"></span>
+              <span class="item-text">
+                <strong>頭面部充血緊繃與牙齦腫痛</strong>
+                <small>意念過重未自神闕下沉，氣血上衝頭頂泥丸，頭部如箍、兩目脹赤</small>
+              </span>
+            </label>
+            <label class="checkbox-item" id="lbl-symptom-exhaustion">
+              <input type="checkbox" class="symptom-checkbox" data-domain="B" data-weight="2" id="chk-symptom-exhaustion">
+              <span class="custom-chk"></span>
+              <span class="item-text">
+                <strong>跳動排濁後虛脫大汗或腳尖痛</strong>
+                <small>動功未踩實腳掌、硬用腳尖支撐，練後全身發軟畏寒、氣虛下陷</small>
+              </span>
+            </label>
+            <label class="checkbox-item" id="lbl-symptom-menstrual">
+              <input type="checkbox" class="symptom-checkbox" data-domain="B" data-weight="4" id="chk-symptom-menstrual">
+              <span class="custom-chk"></span>
+              <span class="item-text">
+                <strong>女性生理期違規修煉提腎封固</strong>
+                <small>在月經期間強練提氣，導致經血逆行、劇烈下腹絞痛或經期驟斷</small>
+              </span>
+            </label>
+          </div>
+
+          <!-- Domain C -->
+          <div class="symptom-group">
+            <h4 class="group-heading">
+              <span class="badge red">領域 C</span>
+              認知執著與幻境妄見（《楞嚴經》五十陰魔指標）
+            </h4>
+            <label class="checkbox-item" id="lbl-symptom-grandeur">
+              <input type="checkbox" class="symptom-checkbox" data-domain="C" data-weight="5" id="chk-symptom-grandeur">
+              <span class="custom-chk"></span>
+              <span class="item-text">
+                <strong>自認已開天目成聖或肩負救世大任</strong>
+                <small>堅信自己已獲得超常神通，視周圍親友皆為愚痴凡夫，產生救世主膨脹</small>
+              </span>
+            </label>
+            <label class="checkbox-item" id="lbl-symptom-voices">
+              <input type="checkbox" class="symptom-checkbox" data-domain="C" data-weight="5" id="chk-symptom-voices">
+              <span class="custom-chk"></span>
+              <span class="item-text">
+                <strong>空中耳語指揮或神佛鬼怪附體感應</strong>
+                <small>耳邊清晰聽見神秘聲音指令，或感覺身體被某種神聖/邪惡存在操縱</small>
+              </span>
+            </label>
+            <label class="checkbox-item" id="lbl-symptom-visions">
+              <input type="checkbox" class="symptom-checkbox" data-domain="C" data-weight="3" id="chk-symptom-visions">
+              <span class="custom-chk"></span>
+              <span class="item-text">
+                <strong>強烈著迷於閉眼光影與異象追求</strong>
+                <small>將靜坐時間全部用於追逐金光、佛影、曼陀羅，深陷其中不願下座生活</small>
+              </span>
+            </label>
+            <label class="checkbox-item" id="lbl-symptom-paranoia">
+              <input type="checkbox" class="symptom-checkbox" data-domain="C" data-weight="4" id="chk-symptom-paranoia">
+              <span class="custom-chk"></span>
+              <span class="item-text">
+                <strong>被害妄想與靈界攻擊恐懼</strong>
+                <small>時常懷疑有人在暗中施法害己、或認為房間充滿負能量妖魔而不敢獨處</small>
+              </span>
+            </label>
+          </div>
+
+          <div class="action-row">
+            <button class="btn btn-primary" id="btn-run-sentinel">執行身心安全診斷</button>
+            <button class="btn btn-secondary" id="btn-reset-sentinel">清空重設</button>
+          </div>
+        </div>
+
+        <!-- Evaluation Results Column -->
+        <div class="glass-panel result-panel" id="panel-sentinel-result">
+          <h3 class="panel-title">即時身心安全儀表盤</h3>
+
+          <div class="risk-gauge-container">
+            <div class="risk-badge" id="risk-badge">🟢 狀態平穩安全</div>
+            <div class="risk-meter-wrapper">
+              <div class="risk-meter-bar" id="risk-meter-bar" style="width: 5%;"></div>
+            </div>
+            <div class="risk-score-display">
+              綜合身心負擔指數：<span class="score-num" id="risk-score-val">0</span> / 40
+            </div>
+          </div>
+
+          <div class="result-body" id="sentinel-prescription-area">
+            <div class="status-summary" id="sentinel-status-summary">
+              <strong>目前狀況良好</strong>：暫未檢出顯著之神經失調、丹道火氣或認知著魔指針。
+            </div>
+
+            <div class="prescription-box" id="sentinel-prescriptions">
+              <h4 class="presc-title">🛡️ 靈台守門員之日常維護建議</h4>
+              <ul class="presc-list" id="presc-list">
+                <li>維持神闕穴（肚臍）下丹田溫和守候，吸短呼長，切記「似守非守、莫即莫離」。</li>
+                <li>坐功結束前務必檢查口腔玉液（唾液），分三口緩緩嚥下以潤五臟。</li>
+                <li>動功跳動排濁時全腳掌著地，以微汗為度，不可硬用腳尖透支元氣。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: 不諂媚的鏡子 -->
+    <section class="tab-content" id="tab-mirror">
+      <div class="content-header">
+        <h2>🪞 不諂媚的鏡子 · 自欺刺破器</h2>
+        <p class="lead">通用 AI 往往諂媚稱讚「你開悟了」。這裡只提供冷靜的客觀反思：王陽明「破心中賊」、理查·費曼「別騙自己」與克里希那穆提「條件制約」的三重質詢。</p>
+      </div>
+
+      <div class="mirror-container glass-panel">
+        <div class="preset-section">
+          <label class="preset-label">快速測試靈修圈常見三大自欺幻相：</label>
+          <div class="preset-buttons">
+            <button class="btn btn-pill" id="btn-preset-light">範例一：看見金光共振自認開悟</button>
+            <button class="btn btn-pill" id="btn-preset-arrogance">範例二：覺得身邊人庸俗自己看透一切</button>
+            <button class="btn btn-pill" id="btn-preset-chosen">範例三：感覺強大能量衝擊頂輪被神選中</button>
+          </div>
+        </div>
+
+        <div class="input-section">
+          <label for="txt-experience" class="input-label">請誠實寫下你今天在靜坐、練氣或生活中的「奇異感應 / 深刻體悟 / 境界自述」：</label>
+          <textarea id="txt-experience" class="custom-textarea" rows="4" placeholder="例如：我剛才打坐時看見眉心有一團金色旋轉光芒，感覺心跳慢了下來，全身細胞都在歡樂震顫，我是不是突破到了某種高維境界？"></textarea>
+          <div class="action-row">
+            <button class="btn btn-primary" id="btn-pierce-mirror">照鏡質詢（打破自欺）</button>
+            <button class="btn btn-secondary" id="btn-clear-mirror">清除內容</button>
+          </div>
+        </div>
+
+        <!-- Piercing Mirror Cards Output -->
+        <div class="pierce-results-container" id="pierce-results" style="display: none;">
+          <h3 class="results-title">🪞 鏡中顯影：三大批判視角的靈魂拷問</h3>
+
+          <div class="cards-grid">
+            <!-- Card 1: 王陽明 -->
+            <div class="glass-card mirror-card">
+              <div class="card-head">
+                <span class="avatar">🏮</span>
+                <div>
+                  <h4 class="card-author">王陽明 · 心學鏡片</h4>
+                  <small class="card-role">致良知 ｜ 破心中賊</small>
+                </div>
+              </div>
+              <p class="card-quote" id="mirror-yangming-text">
+                「你且捫心自問：當這團光影出現時，你心底深處是不是早就在暗暗期盼看見點什麼？這個所謂的殊勝體驗，是讓你在走出房門時對父母妻兒更溫柔寬厚，還是讓你更想找個人說說、炫耀自己與眾不同？若夾了一絲自矜，這便是心中的盜賊！」
+              </p>
+            </div>
+
+            <!-- Card 2: 費曼 -->
+            <div class="glass-card mirror-card">
+              <div class="card-head">
+                <span class="avatar">🔬</span>
+                <div>
+                  <h4 class="card-author">理查·費曼 · 第一原理</h4>
+                  <small class="card-role">非二元實證 ｜ 別騙自己</small>
+                </div>
+              </div>
+              <p class="card-quote" id="mirror-feynman-text">
+                「第一原則是你絕對不能欺騙自己，而你自己正是最容易被騙的那個人！閉上眼睛看見光斑，大概率只是視網膜感光細胞在低氧或眼球微壓下的生理放電。如果把你關在沒有任何預期的全黑房間做雙盲測試，你還敢拿身家性命押注那是宇宙能量嗎？大腦最擅長製造迎合期望的假數據。」
+              </p>
+            </div>
+
+            <!-- Card 3: 克里希那穆提 -->
+            <div class="glass-card mirror-card">
+              <div class="card-head">
+                <span class="avatar">🦅</span>
+                <div>
+                  <h4 class="card-author">克里希那穆提 · 拆解權威</h4>
+                  <small class="card-role">真理無路 ｜ 條件制約</small>
+                </div>
+              </div>
+              <p class="card-quote" id="mirror-krishnamurti-text">
+                「你看見的那個神聖圖像，是不是剛好就是你的傳統、你的導師預先描述給你的符號？基督教修士看見聖母，道士看見丹鼎，這不是超脫，這是記憶的投影儀在牆上放映幻燈片。觀察者本身就是被觀察之物，只要還有一個『我』在享受『境界』，你就依然被鎖在虛榮的牢籠裡。」
+              </p>
+            </div>
+
+            <!-- Card 4: 來靜師父 -->
+            <div class="glass-card mirror-card">
+              <div class="card-head">
+                <span class="avatar">☯️</span>
+                <div>
+                  <h4 class="card-author">來靜師父 · 丹道戒尺</h4>
+                  <small class="card-role">全真龍門第二十一代掌門</small>
+                </div>
+              </div>
+              <p class="card-quote" id="mirror-laijing-text">
+                「凡有所象，皆是虛妄！乃自己識神所化！舌頂上齶，口中有無清香甘甜的玉液湧出？下座後大便乾不乾？若肚子發脹、嘴巴發苦，只有腦袋發熱，這不叫神仙境界，這叫虛火上炎識神著魔！立刻下地散步，喝大杯溫水，見如不見，自然消災！」
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: 每日心性省察 -->
+    <section class="tab-content" id="tab-reflection">
+      <div class="content-header">
+        <h2>🌙 每日睡前心性省察 · 事上磨礪</h2>
+        <p class="lead">不問今天坐了多久、有何境界，只問今天這顆心正不正？哪裡夾了私欲？哪裡動了傲慢與嗔念？</p>
+      </div>
+
+      <div class="reflection-grid">
+        <!-- Sliders Form -->
+        <div class="glass-panel sliders-panel">
+          <h3 class="panel-title">今日五德心性審查（1–5 分自我客觀評量）</h3>
+
+          <!-- Slider 1 -->
+          <div class="slider-group">
+            <div class="slider-head">
+              <label for="sld-humility" class="slider-label">① 謙遜自抑（破傲慢 / 平等心）</label>
+              <span class="slider-val" id="val-humility">3 / 5</span>
+            </div>
+            <p class="slider-hint">今天是否覺得自己比身邊人深刻、清高、高人一等？面對批評時是否急於辯解？</p>
+            <input type="range" id="sld-humility" class="custom-range" min="1" max="5" value="3">
+          </div>
+
+          <!-- Slider 2 -->
+          <div class="slider-group">
+            <div class="slider-head">
+              <label for="sld-contentment" class="slider-label">② 清心自足（戒貪求 / 止妄念）</label>
+              <span class="slider-val" id="val-contentment">3 / 5</span>
+            </div>
+            <p class="slider-hint">今天是否為了名聲、讚賞、境界進展產生焦慮渴求？是否為得失患得患失？</p>
+            <input type="range" id="sld-contentment" class="custom-range" min="1" max="5" value="3">
+          </div>
+
+          <!-- Slider 3 -->
+          <div class="slider-group">
+            <div class="slider-head">
+              <label for="sld-peace" class="slider-label">③ 和顏息怒（化嗔恚 / 破怨氣）</label>
+              <span class="slider-val" id="val-peace">3 / 5</span>
+            </div>
+            <p class="slider-hint">今天面對被冒犯、被阻礙或被冷落時，內心是否生起怨恨忿怒？能否在三秒內覺察？</p>
+            <input type="range" id="sld-peace" class="custom-range" min="1" max="5" value="3">
+          </div>
+
+          <!-- Slider 4 -->
+          <div class="slider-group">
+            <div class="slider-head">
+              <label for="sld-sincerity" class="slider-label">④ 誠實不欺（破自欺 / 慎獨）</label>
+              <span class="slider-val" id="val-sincerity">4 / 5</span>
+            </div>
+            <p class="slider-hint">今天言行是否一致？是否在無人看見處放逸？是否為了面子粉飾自己的過失？</p>
+            <input type="range" id="sld-sincerity" class="custom-range" min="1" max="5" value="4">
+          </div>
+
+          <!-- Slider 5 -->
+          <div class="slider-group">
+            <div class="slider-head">
+              <label for="sld-diligence" class="slider-label">⑤ 本分精進（消懈怠 / 事上磨）</label>
+              <span class="slider-val" id="val-diligence">3 / 5</span>
+            </div>
+            <p class="slider-hint">今天世俗工作與家庭責任是否認真盡責？作息是否規律節制、無端虛度？</p>
+            <input type="range" id="sld-diligence" class="custom-range" min="1" max="5" value="3">
+          </div>
+
+          <!-- Diary Textarea -->
+          <div class="diary-input-group">
+            <label for="txt-reflection-note" class="input-label">今日具體過咎與起心動念實錄（事上磨日記）：</label>
+            <textarea id="txt-reflection-note" class="custom-textarea" rows="3" placeholder="例如：下午開會時，主管質疑我的方案，我當下臉色一沉，心中暗罵他不懂專業（動了嗔怒與傲慢）。回家後靜下心想，其實是我害怕自己方案的漏洞被拆穿。"></textarea>
+          </div>
+
+          <div class="action-row">
+            <button class="btn btn-primary" id="btn-save-reflection">儲存今日省察手記</button>
+            <button class="btn btn-secondary" id="btn-export-reflections">導出所有歷史紀錄</button>
+          </div>
+        </div>
+
+        <!-- Radar Chart Column -->
+        <div class="glass-panel chart-panel">
+          <h3 class="panel-title">今日心性星芒雷達圖</h3>
+          <div class="svg-chart-container">
+            <svg id="radar-chart-svg" viewBox="0 0 400 400" class="radar-svg">
+              <!-- Dynamically generated via app.js -->
+            </svg>
+          </div>
+
+          <div class="reflection-history-section">
+            <h4 class="history-title">歷史省察流水帳（本地存檔）</h4>
+            <div class="history-list" id="history-items-container">
+              <p class="empty-hint">尚無歷史手記，完成今天的第一篇省察吧！</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: 大師戒規手冊 -->
+    <section class="tab-content" id="tab-protocols">
+      <div class="content-header">
+        <h2>📜 大師戒規手冊 · 四幕會審共識</h2>
+        <p class="lead">匯聚克什米爾濕婆派、全真龍門丹道、現代神經減害醫學與第一性原則之精華規約。</p>
+      </div>
+
+      <div class="protocols-grid">
+        <!-- Protocol 1 -->
+        <div class="glass-card protocol-card">
+          <h3 class="proto-title">☯️ 全真龍門百日築基三大戒律（來靜師父）</h3>
+          <ul class="proto-list">
+            <li><strong>神闕為根</strong>：初階練功一律以肚臍神闕穴為下手法，吸短呼長，以意送氣，似守非守。</li>
+            <li><strong>驗證在津</strong>：每一次練功必檢驗口腔玉液。若津液甘冽湧出為真火；若口乾舌燥心煩，即為假火偏差。</li>
+            <li><strong>誠實處方</strong>：提腎術過猛必便秘，立刻大劑量補充維他命 C 與停練；女性生理期絕對禁練。</li>
+          </ul>
+        </div>
+
+        <!-- Protocol 2 -->
+        <div class="glass-card protocol-card">
+          <h3 class="proto-title">🔱 三脈四方便階梯論（Abhinavagupta）</h3>
+          <ul class="proto-list">
+            <li><strong>不費力是頂樓，不是梯子</strong>：上智者一念契入 Anupāya（無方便），但凡夫不可躐等廢止 Āṇava 粗重調息。</li>
+            <li><strong>美感即解脫之影</strong>：審美狂喜（Camatkāra）乃神妙自覺，修行切莫化為枯木死灰的厭世苦行。</li>
+            <li><strong>一切外道各安其諦</strong>：不同門派只是停留於不同的宇宙顯發範疇（tattva），無需互相攻訐。</li>
+          </ul>
+        </div>
+
+        <!-- Protocol 3 -->
+        <div class="glass-card protocol-card">
+          <h3 class="proto-title">🏥 布朗大學神經減害守則（Willoughby Britton）</h3>
+          <ul class="proto-list">
+            <li><strong>警惕意識形態權力</strong>：任何將失眠、恐慌、解離感美化為「靈性覺醒」的導師，皆具危險性。</li>
+            <li><strong>及時踩剎車</strong>：一旦出現現實感喪失或無法睡眠，堅決終止密集打坐，增加負重運動與重口味飲食。</li>
+            <li><strong>高成就者是高危族群</strong>：對冥想越狂熱、越想「速成突破」的高功能人士，越容易發生急性精神崩潰。</li>
+          </ul>
+        </div>
+
+        <!-- Protocol 4 -->
+        <div class="glass-card protocol-card">
+          <h3 class="proto-title">📐 反自欺與檢查分母原則（費曼 & 寫作檢查規範）</h3>
+          <ul class="proto-list">
+            <li><strong>同一個方法不能自己為自己作證</strong>：僅在同一套封閉體系內能驗證的感應，在邏輯上屬於循環論證。</li>
+            <li><strong>檢查母體分母</strong>：任何「每次打坐都很準」的主張，先審查自己忽略了多少次失準與走神。</li>
+            <li><strong>事上磨是唯一試金石</strong>：修行不在蒲團有多久，在於走入生活被冒犯時，能否不起瞋心。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="app-footer">
+    <p>天目知識工程 · 靈台守門人 ｜ 遵循本地離線安全原則 ｜ 依據《AI輔助修行的可能與界限》演化構建</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

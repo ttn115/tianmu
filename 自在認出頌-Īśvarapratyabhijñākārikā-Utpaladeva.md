@@ -75,8 +75,14 @@
 
 ### 1.2.1
 
-> **ity upodghātaḥ //**
-> **iti jñānādhikāre prathamam āhnikam //**
+
+**〔結構分界〕** `ity upodghātaḥ //`
+*（原檔的講次／章分界行，**不是頌文**；2026-10-26 由頌文改標。）*
+
+
+**〔講次分界〕** `iti jñānādhikāre prathamam āhnikam //`
+*（此行為原檔的講次收尾 colophon，**不是頌文**；本檔 2026-10-26 由頌文改標為分界。）*
+
 > **nanu svalakṣaṇābhāsaṃ jñānam ekaṃ paraṃ punaḥ**
 > **sābhilāpaṃ vikalpākhyaṃ bahudhā nāpi tad dvayam**
 
@@ -201,7 +207,10 @@
 
 ### 1.4.1
 
-> **iti jñānādhikāre tṛtīyam āhnikam //**
+
+**〔講次分界〕** `iti jñānādhikāre tṛtīyam āhnikam //`
+*（此行為原檔的講次收尾 colophon，**不是頌文**；本檔 2026-10-26 由頌文改標為分界。）*
+
 > **sa hi pūrvānubhūtārtho-palabdhā parato 'pi san**
 > **vimṛśan sa iti svairī smaratīty apadiśyate**
 
@@ -258,7 +267,10 @@
 
 ### 1.5.1
 
-> **iti jñānādhikāre caturtham āhnikam //**
+
+**〔講次分界〕** `iti jñānādhikāre caturtham āhnikam //`
+*（此行為原檔的講次收尾 colophon，**不是頌文**；本檔 2026-10-26 由頌文改標為分界。）*
+
 > **vartamānāvabhāsānāṃ bhāvānām avabhāsanam**
 > **antaḥsthitavatām eva ghaṭate bahir ātmanā**
 
@@ -406,7 +418,10 @@
 
 ### 1.6.1
 
-> **iti jñānādhikāre pañcamam āhnikam //**
+
+**〔講次分界〕** `iti jñānādhikāre pañcamam āhnikam //`
+*（此行為原檔的講次收尾 colophon，**不是頌文**；本檔 2026-10-26 由頌文改標為分界。）*
+
 > **ahaṃpratyavamarśo yaḥ prakāśātmāpi vāgvapuḥ**
 > **nāsau vikalpaḥ sa hy ukto dvayākṣepī viniścayaḥ**
 
@@ -421,7 +436,10 @@
 
 ### 1.6.3
 
-> **tathā ca**
+
+**〔原檔散文連接語〕** `tathā ca`
+*（此行為作者自註中的連接語，**不是頌文**；2026-10-26 由頌文改標。）*
+
 > **tadatatpratibhābhājā mātraivātadvyapohanāt**
 > **tanniścayanamukto hi vikalpo ghaṭa ity ayam**
 
@@ -483,8 +501,14 @@
 
 ### 1.7.1
 
-> **iti jñānādhikāre ṣaṣṭham āhnikam**
-> **saptamam āhnikam**
+
+**〔講次分界〕** `iti jñānādhikāre ṣaṣṭham āhnikam`
+*（此行為原檔的講次收尾 colophon，**不是頌文**；本檔 2026-10-26 由頌文改標為分界。）*
+
+
+**〔結構分界〕** `saptamam āhnikam`
+*（原檔的講次／章分界行，**不是頌文**；2026-10-26 由頌文改標。）*
+
 > **yā caiṣā pratibhā tattatpadārthakramarūṣitā**
 > **akramānantacidrūpaḥ pramātā sa maheśvaraḥ**
 
@@ -583,7 +607,10 @@
 
 ### 1.8.1
 
-> **iti jñānādhikāre saptamam āhnikam //**
+
+**〔講次分界〕** `iti jñānādhikāre saptamam āhnikam //`
+*（此行為原檔的講次收尾 colophon，**不是頌文**；本檔 2026-10-26 由頌文改標為分界。）*
+
 > **tātkālikākṣasāmakṣyasāpekṣāḥ kevalaṃ kva cit**
 > **ābhāsā anyathānyatra tv andhāndhatamasādiṣu**
 
@@ -664,10 +691,22 @@
 
 ### 2.1.1
 
-> **iti jñānādhikāre 'ṣṭamāhnikam //**
-> **iti jñānādhikāraḥ //**
-> **kriyādhikāraḥ //**
-> **prathamam āhnikam//**
+
+**〔講次分界〕** `iti jñānādhikāre 'ṣṭamāhnikam //`
+*（此行為原檔的講次收尾 colophon，**不是頌文**；本檔 2026-10-26 由頌文改標為分界。）*
+
+
+**〔結構分界〕** `iti jñānādhikāraḥ //`
+*（原檔的講次／章分界行，**不是頌文**；2026-10-26 由頌文改標。）*
+
+
+**〔結構分界〕** `kriyādhikāraḥ //`
+*（原檔的講次／章分界行，**不是頌文**；2026-10-26 由頌文改標。）*
+
+
+**〔結構分界〕** `prathamam āhnikam//`
+*（原檔的講次／章分界行，**不是頌文**；2026-10-26 由頌文改標。）*
+
 > **ata eva yad apy uktaṃ kriyā naikasya sakramā**
 > **eketyādi pratikṣiptaṃ tad ekasya samarthanāt**
 
@@ -724,8 +763,14 @@
 
 ### 2.2.1
 
-> **iti kriyādhikāre prathamam āhnikam //**
-> **dvitīyam āhnikam //**
+
+**〔講次分界〕** `iti kriyādhikāre prathamam āhnikam //`
+*（此行為原檔的講次收尾 colophon，**不是頌文**；本檔 2026-10-26 由頌文改標為分界。）*
+
+
+**〔結構分界〕** `dvitīyam āhnikam //`
+*（原檔的講次／章分界行，**不是頌文**；2026-10-26 由頌文改標。）*
+
 > **kriyāsaṃbandhasāmānyadravyadikkālabuddhayaḥ**
 > **satyāḥ sthairyopayogābhyām ekānekāśrayā matāḥ**
 
@@ -766,7 +811,9 @@
 
 ### 2.2.7
 
-> **vṛ: kāṣṭhasthalīdevadattaudanānāṃ pacatīty antaḥsamanvayād bahirbhedāc caikānekaviṣayā kriyāmatiḥ / deśakālakramo 'pi bhāvānām avadhyavadhimadrūpāṇām anyonyāpekṣaḥ saṃbandhabheda eva tathaivaikānekamayaḥ / jātidravyakriyāsaṃkhyādimatayaḥ sarvā eva saṃbandhaviśeṣasamavāyaviṣayā eva //**
+
+**〔自註（原檔前綴 `vṛ:`）〕** kāṣṭhasthalīdevadattaudanānāṃ pacatīty antaḥsamanvayād bahirbhedāc caikānekaviṣayā kriyāmatiḥ / deśakālakramo 'pi bhāvānām avadhyavadhimadrūpāṇām anyonyāpekṣaḥ saṃbandhabheda eva tathaivaikānekamayaḥ / jātidravyakriyāsaṃkhyādimatayaḥ sarvā eva saṃbandhaviśeṣasamavāyaviṣayā eva //
+
 > **evam evarthasiddhiḥ syān mātur arthakriyārthinaḥ**
 > **bhedābhedavatārthena tena na bhrāntir īdṛśī**
 
@@ -774,8 +821,14 @@
 
 ### 2.3.1
 
-> **iti kriyādhikāre dvitīyam āhnikam //**
-> **tṛtīyam āhnikam //**
+
+**〔講次分界〕** `iti kriyādhikāre dvitīyam āhnikam //`
+*（此行為原檔的講次收尾 colophon，**不是頌文**；本檔 2026-10-26 由頌文改標為分界。）*
+
+
+**〔結構分界〕** `tṛtīyam āhnikam //`
+*（原檔的講次／章分界行，**不是頌文**；2026-10-26 由頌文改標。）*
+
 > **idam etādṛgityevaṃ yad vaśād vyavatiṣṭhate**
 > **vastu pramāṇaṃ tat so 'pi svābhāso 'bhinavodayaḥ**
 
@@ -795,7 +848,10 @@
 
 ### 2.3.4
 
-> **tathā hi**
+
+**〔原檔散文連接語〕** `tathā hi`
+*（此行為作者自註中的連接語，**不是頌文**；2026-10-26 由頌文改標。）*
+
 > **dīrghavṛttordhvapuruṣadhūmacāndanatādibhiḥ**
 > **yathābhāsā vibhidyante deśakālāvibhedinaḥ**
 
@@ -888,7 +944,10 @@
 
 ### 2.4.1
 
-> **iti kriyādhikāre tṛtīyam āhnikam //**
+
+**〔講次分界〕** `iti kriyādhikāre tṛtīyam āhnikam //`
+*（此行為原檔的講次收尾 colophon，**不是頌文**；本檔 2026-10-26 由頌文改標為分界。）*
+
 > **eṣa cānantaśaktitvād evam ābhāsayaty amūn**
 > **bhāvān icchāvaśād eṣā kriyā nirmātṛtāsya sā**
 
@@ -1035,9 +1094,18 @@
 
 ### 3.1.1
 
-> **iti kriyādhikāre caturtham āhnikam //**
-> **iti kriyādhikāraḥ //**
-> **3.1 prathamam āhnikam //**
+
+**〔講次分界〕** `iti kriyādhikāre caturtham āhnikam //`
+*（此行為原檔的講次收尾 colophon，**不是頌文**；本檔 2026-10-26 由頌文改標為分界。）*
+
+
+**〔結構分界〕** `iti kriyādhikāraḥ //`
+*（原檔的講次／章分界行，**不是頌文**；2026-10-26 由頌文改標。）*
+
+
+**〔結構分界〕** `3.1 prathamam āhnikam //`
+*（原檔的講次／章分界行，**不是頌文**；2026-10-26 由頌文改標。）*
+
 > **evam antarbahirvṛttiḥ kriyā kālakramānugā**
 > **mātur eva tadanyonyā-viyukte jñānakarmaṇī**
 
@@ -1113,8 +1181,14 @@
 
 ### 3.2.1
 
-> **ity āgamādhikāre prathamam āhnikam //**
-> **dvitīyam āhnikam //**
+
+**〔結構分界〕** `ity āgamādhikāre prathamam āhnikam //`
+*（原檔的講次／章分界行，**不是頌文**；2026-10-26 由頌文改標。）*
+
+
+**〔結構分界〕** `dvitīyam āhnikam //`
+*（原檔的講次／章分界行，**不是頌文**；2026-10-26 由頌文改標。）*
+
 > **tatraitan mātṛtāmātrasthitau rudro 'dhidaivatam**
 > **bhinnaprameyaprasare brahmaviṣṇū vyavasthitau**
 
@@ -1258,8 +1332,14 @@
 
 ### 4.1
 
-> **ity āgamādhikāre dvitīyam āhnikam //**
-> **ity āgamādhikāraḥ //**
+
+**〔結構分界〕** `ity āgamādhikāre dvitīyam āhnikam //`
+*（原檔的講次／章分界行，**不是頌文**；2026-10-26 由頌文改標。）*
+
+
+**〔結構分界〕** `ity āgamādhikāraḥ //`
+*（原檔的講次／章分界行，**不是頌文**；2026-10-26 由頌文改標。）*
+
 > **svātmaiva sarvajantūnām eka eva maheśvaraḥ**
 > **viśvarūpo 'ham idam ity akhaṇḍāmarśabṛṃhitaḥ**
 
@@ -1411,6 +1491,46 @@
 - ⚠️ **章名是我補的**：原檔正文只有**三行**章題（第一、三、四章），**第二章（kriyādhikāraḥ）沒有標題行**。
   第二章章名依通行分章補上，**不是原檔所有。**
 - 原檔以 `$ & %` 標示音步停頓，本檔原樣保留。
+
+> **⚠️ 2026-10-26 更正（留檔不刪）：11 行講次 colophon 原先被誤標為頌文。**
+> **錯因**：本檔的解析器是逐行狀態機，凡「不是 `ipv:` 開頭、不是章題行」的行都歸入頌文；
+> 而原檔的 **`iti …āhnikam //`（講次收尾）共 11 行**不符合我設的任一例外，於是被當成頌文印在 `> **…**` 裡。
+> **已全部改標為〔講次分界〕。**
+>
+> **這個錯是怎麼被抓到的**：2026-10-26 整理 Abhinavagupta《自在認出論釋》時，
+> 我拿本檔的 190 頌去比對《論釋》的引文，**發現幾首「章首頌」比對不上**——
+> 追下去才看到 2.4.1 的「頌文」裡混著 `iti kriyādhikāre tṛtīyam āhnikam //`。
+> **是跨檔比對抓到的，不是重讀本檔抓到的。**
+>
+> **順帶得到一項新資訊**：**《自在認出頌》原檔本身帶有講次（āhnika）分界**，共 11 處——
+> 知之章第 1、3、4、5、6、7、8 講，作之章第 1、2、3、4 講。
+> **（知之章第 2 講的 colophon 不在原檔；聖教之章與諦要集之章亦無。）**
+> 這與 Abhinavagupta《論釋》的 15 個講次可對讀。
+>
+> **📌 2026-10-26 第二輪：第一輪只修了 11 行，實際上還有 12 行。**
+> 第一輪我用 `iti …āhnikam` 這個式樣抓，**只抓到 11 行**。把《論釋》的頌號逐一對回來之後，
+> 又發現同類問題還有三種形態（**合計再修 12 行**）：
+>
+> | 形態 | 例 | 處數 |
+> |---|---|:-:|
+> | **結構行的其他寫法** | `ity upodghātaḥ //`、`saptamam āhnikam`、`prathamam āhnikam//`、`iti jñānādhikāraḥ //`、`kriyādhikāraḥ //`、`3.1 prathamam āhnikam //`、`ity āgamādhikāraḥ //` | **13** |
+>
+> ⚠️ **而這 13 行是分兩次才修完的，第二次的原因值得記下**：
+> 我第一次用的正規式比對字面 **`adhikāra`**，結果 `iti jñānādhikāraḥ //`、`iti kriyādhikāraḥ //`、`ity āgamādhikāraḥ //` 這四行**全部沒中**。
+> **原因是梵文連音**：`jñāna` ＋ `adhikāra` → **`jñānādhikāra`**（a＋a 合為長 ā），**所以字面上根本沒有 `adhikāra`，只有 `ādhikāra`。**
+> **正確做法：一律比對 `dhikāra`，不要比對 `adhikāra`。**
+> **這個坑我在同一個工作階段裡踩了兩次**（第一次是在抓《自在認出頌》的章題行時）。記在這裡。
+> | **作者自註裡的散文連接語** | `tathā ca`、`tathā hi` | 2 |
+> | **原檔前綴 `vṛ:` 的註釋行** | `vṛ: kāṣṭhasthalī…`（**原檔絕大多數註釋用 `ipv:`，只有這一行用 `vṛ:`，我的解析器只找 `ipv:`**）| 1 |
+>
+> **這一輪是怎麼抓到的**：我把《論釋》186 個頌號所繫的頌文，逐一與本檔同號的頌比對
+> （**174 全中、3 位移、其餘為拼寫或省略號差異**）。**比對不上的那幾首，追下去就是本檔的頌文混了結構行。**
+> **單讀一個檔永遠看不出來；要兩個獨立的檔互相對號才看得出來。**
+>
+> **對先前統計的影響**：合計 23 行、約 700 字元、約 95 詞，佔本檔梵文正文 56,471 字元的約 **1.2%**；
+> 其用字（`iti`／`jñānādhikāre`／`āhnikam` 等）平均長度與頌文相近，
+> **且不含 `nanu`／`vādin`／`bhakti` 等本資料夾用於比較的任何關鍵詞**，
+> **故 `utpaladeva-perspective` 的各項詞頻結論不受實質影響。**
 
 ---
 
