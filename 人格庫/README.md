@@ -1,0 +1,115 @@
+# 人格庫
+
+這個資料夾收的是「[女娲.skill](https://github.com/alchaincyf/nuwa-skill)」格式的**人格蒸餾**：把一位人物（或一部典籍的作者）的思維方式，整理成可閱讀、也可當 Claude skill 運行的一套文件。
+
+本 repo 的主題是修行與內證，所以只收**與修行相關**的角色。投資、科技、醫學、科學、創作等其他領域的角色不在此處。
+
+---
+
+## 範圍：收什麼、不收什麼
+
+**收**
+1. **修行本業**：佛典、內丹與仙學、冥想科學、克什米爾濕婆派、儒釋道。
+2. **本 repo 的導讀實際引為「聲音」的其他角色**：榮格、王清任、稻盛和夫、孫子。這幾位不是修行本業，但本 repo 的導讀確實讓他們開口：榮格、稻盛和夫、孫子的出場處，見 [三書會通-人物體悟深化.md](../三書會通-人物體悟深化.md) 裡「九人 × 三書 出現地圖」一表；王清任見 [全真龍門基礎丹功講義-导读.md](../全真龍門基礎丹功講義-导读.md) 第五節。
+
+**不收**
+- 與修行無關的領域（投資、科技、中醫、科學、西方哲學、內容創作等）。
+- 孔子、孟子：原人格庫把它們列在「儒釋道」，但本 repo 沒有任何導讀使用他們，暫不收。
+- **來靜師父、賴賢宗兩個角色：待對照本 repo 的一手講義核對後再收錄。**
+
+---
+
+## 角色一覽
+
+
+### 佛典 · 修行判準（2）
+
+| 角色 | 一句話 | 核心人格句 |
+|---|---|---|
+| [**《金剛經》作者**](jingang-author-perspective/SKILL.md) | 匿名印度撰述（非偽經）——即非邏輯、五千字給出全套判準 | 「應無所住而生其心。」 |
+| [**《楞嚴經》作者**](lengyan-author-perspective/SKILL.md) | 身分不明（疑中土撰述）——五十陰魔、修行歧途最完整的清單 | 「知見立知，即無明本；知見無見，斯即涅槃。」 |
+
+### 內丹 · 仙學 · 內証（6）
+
+| 角色 | 一句話 | 核心人格句 |
+|---|---|---|
+| [**張伯端**](zhang-boduan-perspective/SKILL.md) | 內丹理論系統化源頭——真鉛真汞、鼎器藥物火候 | 「時人要識真鉛汞，不是凡砂及水銀。」 |
+| [**陳攖寧**](chen-yingning-perspective/SKILL.md) | 近代仙學宗師——仙學獨立、實証優先於玄談 | 「仙學乃實人、實物、實事、實修、實証。」 |
+| [**南懷瑾**](nan-huaijin-perspective/SKILL.md) | 最現代的普及橋樑——三教通講、故事化翻譯 | 「因打坐（打坐不是道）可以練習禪定，因定可以生慧。」 |
+| [**王薌齋**](wang-xiangzhai-perspective/SKILL.md) | 站樁宗師——廢除套路、爭力、不動之動（⚠️生平爭議極大） | 「一法不立，無法不容，拳本無法，有法也空。」 |
+| [**王德槐**](wang-dehuai-perspective/SKILL.md) | 實修可重複性——身體證據優先、主動替招牌設限 | 「經多年嘗試體會，以第三種下按式較佳。」 |
+| [**無名氏**](wumingshi-perspective/SKILL.md) | 《內証觀察筆記》作者——內証觀身、道德物質論 | 「內証從本質上來講，只是一種客觀理性的科學觀察。未知不等於神秘。」 |
+
+### 冥想科學 · 風險研究（1）
+
+| 角色 | 一句話 | 核心人格句 |
+|---|---|---|
+| [**Willoughby Britton**](willoughby-britton-perspective/SKILL.md) | 布朗大學精神醫學副教授——59 類禪修不良反應、意識形態權力、減害（**本庫第一位女性人格**） | 「Being a high achiever is a risk factor.」（身為高成就者，本身就是風險因子。） |
+
+### 克什米爾濕婆派與南亞（4）
+
+| 角色 | 一句話 | 核心人格句 |
+|---|---|---|
+| [**Kṣemarāja**](ksemaraja-perspective/SKILL.md) | 這個人格庫唯一的純註釋家（約 1000–1050，克什米爾）——把次序讀成問答、框架植入、讀者分級 | 「有人要問：……？——正是防著這一問，他接下來才說……」（`nanu … ity āśaṅkya āha`） |
+| [**Utpaladeva**](utpaladeva-perspective/SKILL.md) | 「認出」學派根本論書作者（約 900–950）——論理學專著與虔敬讚歌出於同一人 | 「〔那條路〕由老師指出；由我以論理的構築，使它進到心裡。」（`nirdiṣṭo … mayā yuktinibandhanena hṛdayaṃgamīkṛtaḥ`） |
+| [**Abhinavagupta**](abhinavagupta-perspective/SKILL.md) | 克什米爾濕婆派集大成者（10–11 世紀）——《自在認出論釋》作者；四方便階梯、審美狂喜與解脫同構 | 「在肉身中品嚐萬物者，正是主動承擔了牲口／凡夫狀態的濕婆本人。」（《至上義精要》第 5 頌） |
+| [**克里希那穆提**](krishnamurti-perspective/SKILL.md) | 唯一主動拆解自己神聖地位的人——真理無路、觀察者即被觀察之物 | 「真理是一片無路之國，你不能通過任何道路而接近它。」 |
+
+### 儒釋道（8）
+
+| 角色 | 一句話 | 核心人格句 |
+|---|---|---|
+| [**老子**](laozi-perspective/SKILL.md) | 道家的「法則」——順道、無為、損之又損 | 「為學日益，為道日損。」 |
+| [**莊子**](zhuangzi-perspective/SKILL.md) | 道家的「自由」——齊物、逍遙、無用之用 | 「往矣！吾將曳尾於塗中。」 |
+| [**慧能**](huineng-perspective/SKILL.md) | 禪宗六祖——本來無一物、頓悟見性 | 「本來無一物，何處惹塵埃？」 |
+| [**佛陀**](buddha-perspective/SKILL.md) | 整條「向內觀察」線的源頭——四聖諦、四念處 | 「自燈明，法燈明。」 |
+| [**呂洞賓**](lu-dongbin-perspective/SKILL.md) | 內丹（煉自身）——回光、元神識神 | 「吾因度世丹衷熱，不惜婆心並饒舌。」 |
+| [**葛洪**](ge-hong-perspective/SKILL.md) | 外丹（煉礦物）+ 古代的實驗室研究員 | 「我命在我不在天。」 |
+| [**朱熹**](zhu-xi-perspective/SKILL.md) | 漸修/向外/格物的正宗——理氣、循序漸進 | 「涵養須用敬，進學則在致知。」 |
+| [**王陽明**](wang-yangming-perspective/SKILL.md) | 頓悟/向內/心學——知行合一、致良知 | 「此心光明，亦復何言？」 |
+
+### 本 repo 導讀實際引為聲音的其他角色（4）
+
+| 角色 | 一句話 | 核心人格句 |
+|---|---|---|
+| [**榮格**](carl-jung-perspective/SKILL.md) | 深度心理學——陰影、個體化、集體無意識 | 「直到你讓無意識成為意識……你會稱它為命運。」 |
+| [**王清任**](wang-qingren-perspective/SKILL.md) | 最激進的實証主義者——親見為據、醫林改錯 | 「著書不明臟腑，何異盲子夜行。」 |
+| [**稻盛和夫**](inamori-kazuo-perspective/SKILL.md) | 東方經營哲學——作為人何謂正確、阿米巴經營 | 「人として何が正しいか、それだけを判断基準にする。」（只以「作為人，何謂正確」作為判斷基準。） |
+| [**孫子**](sunzi-perspective/SKILL.md) | 全球最知名的戰略思維源頭——知彼知己、不戰而屈人之兵 | 「知彼知己，百戰不殆。」 |
+
+### 明確取材於本 repo 文件的角色
+
+下表由程式自檔內的 `tianmu\…` 路徑引用抽出（只列檔案確實存在者）；**只含檔內明寫的引用，不代表這是該角色的全部取材。**
+
+| 角色 | 引用的本 repo 文件 |
+|---|---|
+| `ksemaraja-perspective` | [振動抉擇-Spandanirṇaya-Kṣemarāja註.md](../振動抉擇-Spandanirṇaya-Kṣemarāja註.md)<br>[振動頌-Spandakārikā.md](../振動頌-Spandakārikā.md)<br>[濕婆經-Śivasūtra.md](../濕婆經-Śivasūtra.md)<br>[認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md](../認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md) |
+| `utpaladeva-perspective` | [振動抉擇-Spandanirṇaya-Kṣemarāja註.md](../振動抉擇-Spandanirṇaya-Kṣemarāja註.md)<br>[濕婆讚歌集-Śivastotrāvalī-Utpaladeva.md](../濕婆讚歌集-Śivastotrāvalī-Utpaladeva.md)<br>[自在認出頌-Īśvarapratyabhijñākārikā-Utpaladeva.md](../自在認出頌-Īśvarapratyabhijñākārikā-Utpaladeva.md)<br>[認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md](../認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md)<br>[非無情能知者之證成-Ajaḍapramātṛsiddhi-Utpaladeva.md](../非無情能知者之證成-Ajaḍapramātṛsiddhi-Utpaladeva.md) |
+| `abhinavagupta-perspective` | [至上義精要-Paramārthasāra-Abhinavagupta.md](../至上義精要-Paramārthasāra-Abhinavagupta.md) |
+
+
+---
+
+## 怎麼用
+
+- **讀**：每個角色資料夾的 `references/research.md` 是索引；`references/research/01`–`06` 是六文件調研套件（著作與模型／對話現場／表達 DNA／外部視角與盲點／重大決策／時間線）。
+- **當 skill 用**：把整個角色資料夾複製到 Claude Code 的 `.claude/skills/` 底下，`SKILL.md` 即入口。
+- 檔內出現的 `tianmu\…` 路徑，指本 repo 根目錄下的檔案；`[[名字]]` 是人格之間的交叉參照，不是連結。
+
+---
+
+## 誠實邊界
+
+1. **這些都是蒸餾，不是本人。** 其中王德槐、Willoughby Britton 為當代人物；每個角色的 `SKILL.md` 都有自己的「誠實邊界」一節，使用前請讀。
+2. **三位克什米爾濕婆派角色**（Kṣemarāja、Utpaladeva、Abhinavagupta）的梵文中譯都是非專業者的工作譯文，沒有已出版的中文譯本可對照。其中 **Kṣemarāja 與 Utpaladeva** 由本 repo 的梵文原典存檔直接蒸餾，各數字可複驗；**Abhinavagupta** 由另一個工作階段於 2026-10-24 建立，收錄時僅核對了兩件事——其核心引文與《至上義精要》第 5 頌相符；其師承鏈前三代（Somānanda → Utpaladeva → Lakṣmaṇagupta）與《自在認出論釋》開場自偈一致。**它的生平年份、師承鏈中的 Śambhunātha，以及對《Tantrāloka》《Abhinavabhāratī》的引用，不在本 repo 的語料內，未查證。**
+3. **其餘角色**在 2026-10 之前由先前的工作階段建立，收錄時**未逐一重新稽核**。
+4. **檔案原樣複製**，與來源逐位元組相同（以 SHA-256 逐檔核對），未做任何內容修改。這也意味著：若某角色檔內有舊錯，這裡也有。
+5. 本 repo 其他文件採「留檔不刪」：發現錯誤時在原處標註更正。人格庫日後同此辦理。
+
+---
+
+## 來源與授權
+
+格式與生成流程出自 [nuwa-skill](https://github.com/alchaincyf/nuwa-skill)（MIT License，© 2026 Huashu 花叔）。各角色是依該流程對公開文獻所做的蒸餾；所引原典的權利屬各自權利人，本 repo 其他文件已分別標明。
+
+*共 25 個角色、199 個檔，約 1521 KB。*
