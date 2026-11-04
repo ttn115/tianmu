@@ -55,7 +55,7 @@
 |---|---|---|
 | [**Kṣemarāja**](ksemaraja-perspective/SKILL.md) | 這個人格庫唯一的純註釋家（約 1000–1050，克什米爾）——把次序讀成問答、框架植入、讀者分級 | 「有人要問：……？——正是防著這一問，他接下來才說……」（`nanu … ity āśaṅkya āha`） |
 | [**Utpaladeva**](utpaladeva-perspective/SKILL.md) | 「認出」學派根本論書作者（約 900–950）——論理學專著與虔敬讚歌出於同一人 | 「〔那條路〕由老師指出；由我以論理的構築，使它進到心裡。」（`nirdiṣṭo … mayā yuktinibandhanena hṛdayaṃgamīkṛtaḥ`） |
-| [**Abhinavagupta**](abhinavagupta-perspective/SKILL.md) | 克什米爾濕婆派集大成者（10–11 世紀）——《自在認出論釋》作者；四方便階梯、審美狂喜與解脫同構 | 「在肉身中品嚐萬物者，正是主動承擔了牲口／凡夫狀態的濕婆本人。」（《至上義精要》第 5 頌） |
+| [**Abhinavagupta**](abhinavagupta-perspective/SKILL.md) | 克什米爾濕婆派集大成者（約 950–1016）——**本庫最大的一手語料（約 1.09 MB 梵文、五部）**；同一套系統寫四遍、**從不在自家系統裡提自己學派的名字** | 「《怛特羅無上》浩瀚，不是人人能潛入的；而這部是用平直的話寫的。」 |
 | [**克里希那穆提**](krishnamurti-perspective/SKILL.md) | 唯一主動拆解自己神聖地位的人——真理無路、觀察者即被觀察之物 | 「真理是一片無路之國，你不能通過任何道路而接近它。」 |
 
 ### 儒釋道（8）
@@ -88,7 +88,7 @@
 |---|---|
 | `ksemaraja-perspective` | [振動抉擇-Spandanirṇaya-Kṣemarāja註.md](../振動抉擇-Spandanirṇaya-Kṣemarāja註.md)<br>[振動頌-Spandakārikā.md](../振動頌-Spandakārikā.md)<br>[濕婆經-Śivasūtra.md](../濕婆經-Śivasūtra.md)<br>[認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md](../認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md) |
 | `utpaladeva-perspective` | [振動抉擇-Spandanirṇaya-Kṣemarāja註.md](../振動抉擇-Spandanirṇaya-Kṣemarāja註.md)<br>[濕婆讚歌集-Śivastotrāvalī-Utpaladeva.md](../濕婆讚歌集-Śivastotrāvalī-Utpaladeva.md)<br>[自在認出頌-Īśvarapratyabhijñākārikā-Utpaladeva.md](../自在認出頌-Īśvarapratyabhijñākārikā-Utpaladeva.md)<br>[認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md](../認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md)<br>[非無情能知者之證成-Ajaḍapramātṛsiddhi-Utpaladeva.md](../非無情能知者之證成-Ajaḍapramātṛsiddhi-Utpaladeva.md) |
-| `abhinavagupta-perspective` | [至上義精要-Paramārthasāra-Abhinavagupta.md](../至上義精要-Paramārthasāra-Abhinavagupta.md) |
+| `abhinavagupta-perspective` | [怛特羅無上-Tantrāloka-Abhinavagupta.md](../怛特羅無上-Tantrāloka-Abhinavagupta.md)（37 章 5,860 頌）<br>[怛特羅精要-Tantrasāra-Abhinavagupta.md](../怛特羅精要-Tantrasāra-Abhinavagupta.md)（22 章散文）<br>[自在認出論釋-Īśvarapratyabhijñāvimarśinī-Abhinavagupta.md](../自在認出論釋-Īśvarapratyabhijñāvimarśinī-Abhinavagupta.md)<br>[至上義精要-Paramārthasāra-Abhinavagupta.md](../至上義精要-Paramārthasāra-Abhinavagupta.md)（105 頌）<br>[覺之十五頌-Bodhapañcadaśikā-Abhinavagupta.md](../覺之十五頌-Bodhapañcadaśikā-Abhinavagupta.md)<br>〔對照〕[至上義精要註-Paramārthasāravivṛti-Yogarāja.md](../至上義精要註-Paramārthasāravivṛti-Yogarāja.md) |
 | `lai-jing-perspective` | [全真龍門基礎丹功講義/](../全真龍門基礎丹功講義/)（`01-自序`、`02-…丹功次第與系統`、`05-貳-概要與釋疑`、`06-參-百日築基`、`07-肆-丹功答問`、`08-附-課程規劃與施行辦法`、`09-附-《北宗氣功》新版序`、`README`）<br>[王德槐-學術研究與相關書目.md](../王德槐-學術研究與相關書目.md) |
 | `lai-xianzong-perspective` | [全真龍門基礎丹功講義/](../全真龍門基礎丹功講義/)（同上八篇）<br>[全真龍門基礎丹功講義-导读.md](../全真龍門基礎丹功講義-导读.md)<br>[北宗氣功-書目與內容考.md](../北宗氣功-書目與內容考.md)<br>[楞嚴經.md](../楞嚴經.md) |
 
@@ -138,6 +138,51 @@
 
 ⚠️ **而他反覆勸人「休妻別子」「棄妻男產業」**（九處）。「妻」在他語料 39 次，**在他那部散文語錄裡 0 次**。
 **他從未處理「我勸人棄妻，而我的妻自己成道了」這件事。**
+
+---
+
+## 2026-11-04：Abhinavagupta 全面重建——補足語料並換掉全部模型
+
+**原因**：原版（2026-10-24）**7.8 KB、quality_check 4/9**，而它的證據不成立——把《Tantrāloka》《Tantrasāra》《Locana》《Abhinavabhāratī》列為「跨域復現」依據，**而四部當時都不在語料裡**；自稱語料為《至上義精要》105 頌，**全檔零測量**。
+
+**本次取得他本人四部著作的梵文全文，一手語料 19 KB → 約 1.09 MB，成為本 repo 最大的一手語料。**
+
+| 新收入本 repo | 體裁 | 規模 | 底本 |
+|---|---|---|---|
+| [怛特羅無上-Tantrāloka](../怛特羅無上-Tantrāloka-Abhinavagupta.md) | 頌 | **37 章、5,860 頌、46,378 詞** | KSTS 23/28/30…（1918–38） |
+| [怛特羅精要-Tantrasāra](../怛特羅精要-Tantrasāra-Abhinavagupta.md) | **散文** | 22 章、10,443 詞 | KSTS 17（1918） |
+| [覺之十五頌-Bodhapañcadaśikā](../覺之十五頌-Bodhapañcadaśikā-Abhinavagupta.md) | 頌 | 15 頌 | GRETIL |
+| 〔對照〕[至上義精要註-Yogarāja](../至上義精要註-Paramārthasāravivṛti-Yogarāja.md) | 散文註 | 10,534 詞 | GRETIL（2026-10-14 下載、當時未收，本次補上） |
+
+**三個最鋒利的結果**：
+
+**① 他從不在自家系統裡提自己學派的名字。** `pratyabhijñā` 在《怛特羅無上》《怛特羅精要》《至上義精要》《覺之十五頌》**全部 0 次**（合計約 58,457 詞）；只有註 Utpaladeva 的書時才用（12.5／萬詞）。
+**這與 [Utpaladeva](utpaladeva-perspective/SKILL.md) 是同一個結果的跨代復現**——他創立該學派而自己 450 首讚歌裡該詞 0 次。
+
+**② 他既被註者放大，也是放大者。** Yogarāja 註他最淺那部，`camatkāra` 用得比他密約 49 倍；而他註 Utpaladeva 時把 `pratyabhijñā` 從 0 拉到 12.5／萬詞。**所以「註者把框架讀進文本」不是後人的毛病，是這個註釋傳統的工作方式。本 repo 第三個案例。**
+
+**③ 只有節本需要「四卵」這個鷹架。** `aṇḍacatuṣṭaya` 在 46,378 詞的巨著裡 **0 次**，在《至上義精要》是第 4 頌的總架構。**大書有 37 章可以慢慢走；壓到 105 頌才需要一個四格的盒子裝 36 諦。**
+
+### ⚠️ 而本次重建自己犯的第四個錯，連帶改動了本 repo 一條既有結論
+
+**我原先用「平均詞長」當梵文密度代理，宣稱他的四部作品是一條遞降序列（10.46 → 8.95 → 8.50 → 8.20 → 6.65），據此說「他說他簡化了，而他真的簡化了」。**
+**那個宣稱撤回。** 決定性對照：**《怛特羅無上》與《怛特羅精要》的開篇第一頌內容相同**，而
+
+| 同一首頌 | 詞數 | 平均詞長 | 總字母 |
+|---|--:|--:|--:|
+| 《怛特羅無上》版 | 14 | **14.86** | 208 |
+| 《怛特羅精要》版 | 18 | **11.39** | 205 |
+
+一邊寫 `bharitatanuśca`、`hṛdayamanuttarāmṛtakulaṃ`，另一邊寫 `bharitatanuś ca`、`hṛdayam anuttarāmṛtakulaṃ`。
+**字母數幾乎相同，而轉寫慣例造成的落差（3.47）大於我要證明的落差（1.96）。**
+
+> ⚠️⚠️ **連帶後果**：[自在認出論釋](../自在認出論釋-Īśvarapratyabhijñāvimarśinī-Abhinavagupta.md) 檔記有「三代『為鈍根者而寫』而簡化在字面上並沒有發生」（依據 9.9／9.1／9.3 對 8.5）——**那些也是跨檔比較，落差同樣在 3.47 的量級內。該結論已改標「未定」（留檔不刪）。**
+> **✅ 而三代的文本鏈仍然成立**（`janasyāyatnasiddhyartham` → `mandabuddhīn pratī` → `sukumāramatayaḥ`）——**那是引文，不是測量。**
+
+**✅ 不受轉寫影響、因此仍成立的結構證據**：章數 **37→22**、單位 **5,860→748**（7.8 倍）；論辯標記（`nanu`／`iti cet`／`pūrvapakṣa`）在那部 105 頌本**全部歸零**；節本指回大書 **7 次**；鷹架詞只在節本。
+**他的簡化是刪章數、刪論證、加一個總架構的盒子——不是把句子寫短。**
+
+**新增一條查核規則**：**跨檔比較任何「每詞」指標之前，先找一段兩檔都有的相同內容，量它；假影大於訊號就不要用那個指標。**
 
 ---
 
