@@ -49,11 +49,12 @@
 |---|---|---|
 | [**Willoughby Britton**](willoughby-britton-perspective/SKILL.md) | 布朗大學精神醫學副教授——59 類禪修不良反應、意識形態權力、減害（**本庫第一位女性人格**） | 「Being a high achiever is a risk factor.」（身為高成就者，本身就是風險因子。） |
 
-### 克什米爾濕婆派與南亞（4）
+### 克什米爾濕婆派與南亞（5）
 
 | 角色 | 一句話 | 核心人格句 |
 |---|---|---|
 | [**Kṣemarāja**](ksemaraja-perspective/SKILL.md) | 這個人格庫唯一的純註釋家（約 1000–1050，克什米爾）——把次序讀成問答、框架植入、讀者分級 | 「有人要問：……？——正是防著這一問，他接下來才說……」（`nanu … ity āśaṅkya āha`） |
+| [**Bhāskara**](bhaskara-perspective/SKILL.md) | 《濕婆經疏》作者（約 11 世紀）——**《濕婆經》兩家註之一**；十八倍展開而不加密、**整套術語在他所註的經文裡 0 次** | 「大自在天是以連讀與不連讀兩種讀法說出此經的。」 |
 | [**Utpaladeva**](utpaladeva-perspective/SKILL.md) | 「認出」學派根本論書作者（約 900–950）——論理學專著與虔敬讚歌出於同一人 | 「〔那條路〕由老師指出；由我以論理的構築，使它進到心裡。」（`nirdiṣṭo … mayā yuktinibandhanena hṛdayaṃgamīkṛtaḥ`） |
 | [**Abhinavagupta**](abhinavagupta-perspective/SKILL.md) | 克什米爾濕婆派集大成者（約 950–1016）——**本庫最大的一手語料（約 1.09 MB 梵文、五部）**；同一套系統寫四遍、**從不在自家系統裡提自己學派的名字** | 「《怛特羅無上》浩瀚，不是人人能潛入的；而這部是用平直的話寫的。」 |
 | [**克里希那穆提**](krishnamurti-perspective/SKILL.md) | 唯一主動拆解自己神聖地位的人——真理無路、觀察者即被觀察之物 | 「真理是一片無路之國，你不能通過任何道路而接近它。」 |
@@ -87,6 +88,7 @@
 | 角色 | 引用的本 repo 文件 |
 |---|---|
 | `ksemaraja-perspective` | [振動抉擇-Spandanirṇaya-Kṣemarāja註.md](../振動抉擇-Spandanirṇaya-Kṣemarāja註.md)<br>[振動頌-Spandakārikā.md](../振動頌-Spandakārikā.md)<br>[濕婆經-Śivasūtra.md](../濕婆經-Śivasūtra.md)<br>[認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md](../認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md) |
+| `bhaskara-perspective` | [濕婆經疏-Śivasūtravārttika-Bhāskara.md](../濕婆經疏-Śivasūtravārttika-Bhāskara.md)（經 75 條＋註偈 757 首，分層呈現）<br>[濕婆經-Śivasūtra.md](../濕婆經-Śivasūtra.md)（所註本文）<br>〔對照〕[認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md](../認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md)、[振動抉擇-Spandanirṇaya-Kṣemarāja註.md](../振動抉擇-Spandanirṇaya-Kṣemarāja註.md) |
 | `utpaladeva-perspective` | [振動抉擇-Spandanirṇaya-Kṣemarāja註.md](../振動抉擇-Spandanirṇaya-Kṣemarāja註.md)<br>[濕婆讚歌集-Śivastotrāvalī-Utpaladeva.md](../濕婆讚歌集-Śivastotrāvalī-Utpaladeva.md)<br>[自在認出頌-Īśvarapratyabhijñākārikā-Utpaladeva.md](../自在認出頌-Īśvarapratyabhijñākārikā-Utpaladeva.md)<br>[認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md](../認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md)<br>[非無情能知者之證成-Ajaḍapramātṛsiddhi-Utpaladeva.md](../非無情能知者之證成-Ajaḍapramātṛsiddhi-Utpaladeva.md) |
 | `abhinavagupta-perspective` | [怛特羅無上-Tantrāloka-Abhinavagupta.md](../怛特羅無上-Tantrāloka-Abhinavagupta.md)（37 章 5,860 頌）<br>[怛特羅精要-Tantrasāra-Abhinavagupta.md](../怛特羅精要-Tantrasāra-Abhinavagupta.md)（22 章散文）<br>[自在認出論釋-Īśvarapratyabhijñāvimarśinī-Abhinavagupta.md](../自在認出論釋-Īśvarapratyabhijñāvimarśinī-Abhinavagupta.md)<br>[至上義精要-Paramārthasāra-Abhinavagupta.md](../至上義精要-Paramārthasāra-Abhinavagupta.md)（105 頌）<br>[覺之十五頌-Bodhapañcadaśikā-Abhinavagupta.md](../覺之十五頌-Bodhapañcadaśikā-Abhinavagupta.md)<br>〔對照〕[至上義精要註-Paramārthasāravivṛti-Yogarāja.md](../至上義精要註-Paramārthasāravivṛti-Yogarāja.md) |
 | `lai-jing-perspective` | [全真龍門基礎丹功講義/](../全真龍門基礎丹功講義/)（`01-自序`、`02-…丹功次第與系統`、`05-貳-概要與釋疑`、`06-參-百日築基`、`07-肆-丹功答問`、`08-附-課程規劃與施行辦法`、`09-附-《北宗氣功》新版序`、`README`）<br>[王德槐-學術研究與相關書目.md](../王德槐-學術研究與相關書目.md) |
@@ -186,6 +188,55 @@
 
 ---
 
+## 2026-11-04：Bhāskara 入庫——補上本 repo 一個長期的方法論缺口
+
+**本 repo 反覆指認「註釋者把框架讀進一個沒有那套框架的文本」**（見 [Kṣemarāja](ksemaraja-perspective/SKILL.md)、[至上義精要註-Yogarāja](../至上義精要註-Paramārthasāravivṛti-Yogarāja.md)）。
+**但只有一家註的時候，兩個解釋分不開**：**(a) 是這個註者自己讀進去的；(b) 那套框架本來就屬於活的傳統，只是根本經文極簡。**
+[sun-buer-perspective 的 04 檔](sun-buer-perspective/references/research/04-external-views.md)就寫著這個限制：**「我沒有陳攖寧以外的註本。」**
+
+**《濕婆經》有兩家獨立的註**——**Bhāskara《Vārttika》（75 條，20／10／45）**與 **Kṣemarāja《Vimarśinī》（77 條，22／10／45）**。
+**所以這一次分開了。**
+
+### ✅ 結論：(a) 被排除
+
+**十三個克什米爾濕婆派核心術語在 180 詞的《濕婆經》裡 0 次**（svātantrya／vimarśa／prakāśa／spanda／pratyabhijñā／camatkāra／mala／āṇava／māyīya／kārma／turya／anuttara／samāveśa），
+**而在兩家互不相干的註裡 13／13 全部都有。**
+
+> **📌 所以本 repo 對「註者放大」的描述要修正一層。**
+> **不是「某個註者把他的框架讀進文本」，而是「這個註釋傳統的整套技術語彙在它所註的根本經文裡不存在，而每一家註者各自供應它」。**
+> **這是傳統的工作方式，不是個人的毛病。**
+
+⚠️ **不對等須隨結論一起說**：Kṣemarāja 那一側取自他的《[認出之心要](../認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md)》＋《[振動抉擇](../振動抉擇-Spandanirṇaya-Kṣemarāja註.md)》（3,077 詞），**不是他的《濕婆經疏》（Vimarśinī）——GRETIL 沒有。** 13／13 的結論不受影響，**但「兩家對同一條經的處理差異」量不出來。**
+
+### ✅ 本 repo 第一次為詞頻宣稱附上顯著性檢定
+
+**經文只有 180 詞，每個術語的期望值只有 0.06–0.73——單項的「0 次」在統計上毫無意義。**
+**只有合計 13 個詞（230.0／萬詞 → 期望 4.14、實際 0、Poisson p ≈ 0.016）才構成證據。**
+⚠️ **回頭看，本 repo 此前的詞頻宣稱都沒有做這一步。語料短的那些（如孫不二的 896 字）應該補。**
+
+### ⚠️ 而他是本 repo 註者系列裡唯一的反例
+
+| 註者 | 註誰 | 註 vs 本文的平均詞長 |
+|---|---|---|
+| Yogarāja | Abhinavagupta《至上義精要》 | **11.26 對 8.20（密 37%）** |
+| Kṣemarāja | Utpaladeva | 註比頌文密 |
+| **Bhāskara** | Vasugupta《濕婆經》 | ⚠️ **9.42 對 9.93（低 5%）** |
+
+**篇幅 17.9 倍（180 → 3,218 詞），而平均詞長反而降。**
+✅ 這個比較是**同檔、同輸入者**的，所以可靠（跨檔不可比，見《[怛特羅無上](../怛特羅無上-Tantrāloka-Abhinavagupta.md)》檔的更正節）。
+
+### ✅ 一條舊紀錄現在有了原因
+
+《[濕婆經](../濕婆經-Śivasūtra.md)》檔（2026-10-14）記著兩家分章 20／10／45 對 22／10／45，「**原因是兩家對第一章若干條的斷句不同**」。
+**而原因是他自己說的**〔1.1:14〕：
+> **praśleṣāśleṣapāṭhābhyāṃ sūtram āha maheśvaraḥ**
+> 「大自在天是以『連讀』與『不連讀』兩種讀法說出此經的。」
+
+**所以那兩條之差不是傳抄失誤，是解經原則的直接後果。**
+⚠️ **但他宣告了這個原則卻幾乎沒有執行**：`praśleṣa`／`āśleṣa`／`athavā` 各 1 次，757 首裡只有一處真正給了第二種解釋。
+
+---
+
 ## 查證記錄
 
 - **[來靜-賴賢宗-查證記錄.md](來靜-賴賢宗-查證記錄.md)** —— 對 `lai-jing` 與 `lai-xianzong` 兩個角色的三輪核對全紀錄（2026-10-24 建立 → 11-01 以一手講義更正 → **11-02 查外部文獻，翻轉 11 項「未查證」並修正第二輪兩處失誤**）。
@@ -221,4 +272,4 @@
 
 格式與生成流程出自 [nuwa-skill](https://github.com/alchaincyf/nuwa-skill)（MIT License，© 2026 Huashu 花叔）。各角色是依該流程對公開文獻所做的蒸餾；所引原典的權利屬各自權利人，本 repo 其他文件已分別標明。
 
-*共 29 個角色、231 個檔，約 1800 KB。其中**女性人格 2 位**（Willoughby Britton、孫不二），**唯一一對夫妻人格：孫不二與馬鈺**。*
+*共 30 個角色、239 個檔，約 1941 KB。其中**女性人格 2 位**（Willoughby Britton、孫不二），**唯一一對夫妻人格：孫不二與馬鈺**。*
