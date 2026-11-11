@@ -44,6 +44,7 @@
 | [**王重陽**](wang-chongyang-perspective/SKILL.md) | **全真道開山**（1113–1170，一說 1112 生）、馬鈺／孫不二／丘處機／譚處端之師——**自穿活死人墓、自稱害風（瘋子）、以自嘲立教**；「清淨兩個字，其餘都不是修行」 | 「活死人兮王喆乖，水雲別是一歡諧。道名喚作重陽子，謔號稱為沒地埋。」 |
 | [**孫不二**](sun-buer-perspective/SKILL.md) | **全真七真唯一的女性**（1119–1182）、清淨派創立者、後世奉為坤丹之祖——把生理事件寫進次第表 | 「若將枯寂為修鍊，弱水盈盈少便舟。」 |
 | [**馬鈺**](mayu-perspective/SKILL.md) | **孫不二之夫**（1123–1183）、王重陽首徒、全真第二代掌教——**內丹祖師而說爐鼎鉛汞「儘是虛名」**；把全教法壓到可數的字數 | 「種種名相，皆不可著，止是神炁二字而已。」 |
+| [**陳虛白**](chen-xubai-perspective/SKILL.md) | **元代內丹、這条線的最上游與反方**（陳沖素；⚠️ 生卒全不詳、語料僅 5,477 字）——⭐⭐⭐ **他逐項否認子午卯酉、十二時、三百息，而引他的正是建立那一套的伍守陽**；⭐⭐ **「氣」全書 0 次（只用「炁」）——所以炊／氣分字是伍守陽的創新不是繼承** | 「夫所謂藥物火候者，亦皆譬諭耳。……**不規中而自規中**。」 |
 | [**伍守陽**](wu-shouyang-perspective/SKILL.md) | **丹道伍柳派**（沖虛子，明，自稱接丘處機法脈；⚠️ 生卒本 repo 未核）——**把比喻拆開而不廢比喻**（「喻」117.8 倍於全真四代）；⭐⭐ **把「炁」與「氣」当兩個術語：炁 47.3 倍而氣 1.03 倍，先天炁 11／後天氣 7／交叉 0**；⭐ **小周天到他為止，而「任督」他也 0 次** | 「天仙大道喻金丹，金丹根本喻藥物，果以何物喻藥也？」 |
 | [**柳華陽**](liu-huayang-perspective/SKILL.md) | **伍守陽之後學、落髮僧人**（清，洪都人；⚠️ 生卒本 repo 未核）——⭐⭐⭐ **「任督」的年代斷點就在他**：全真四代 0、其師伍守陽 0、他 16 次且兩本書各有一章叫「任督二脈圖」；⭐⭐ **同一套功法兩套語彙**（《慧命經》周天 0・火候 0而法輪 53；《金仙證論》116・27）；⭐ **把師父的 36／24 判為「名是訣不是」** | 「此圖直泄玄機……**古聖雖無圖**，卾有言存留，奈何不全之過耳。」 |
 
@@ -97,6 +98,7 @@
 |---|---|
 | `ksemaraja-perspective` | [振動抉擇-Spandanirṇaya-Kṣemarāja註.md](../振動抉擇-Spandanirṇaya-Kṣemarāja註.md)<br>[振動頌-Spandakārikā.md](../振動頌-Spandakārikā.md)<br>[濕婆經-Śivasūtra.md](../濕婆經-Śivasūtra.md)<br>[認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md](../認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md) |
 | `bhaskara-perspective` | [濕婆經疏-Śivasūtravārttika-Bhāskara.md](../濕婆經疏-Śivasūtravārttika-Bhāskara.md)（經 75 條＋註偈 757 首，分層呈現）<br>[濕婆經-Śivasūtra.md](../濕婆經-Śivasūtra.md)（所註本文）<br>〔對照〕[認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md](../認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md)、[振動抉擇-Spandanirṇaya-Kṣemarāja註.md](../振動抉擇-Spandanirṇaya-Kṣemarāja註.md) |
+| `chen-xubai-perspective` | [規中指南-陳虛白/01-陳虛白-規中指南.md](../規中指南-陳虛白/01-陳虛白-規中指南.md)（5,477 漢字，元）<br>〔另層，非他所作〕[同資料夾/02-道藏編目-經名題記.md](../規中指南-陳虛白/02-道藏編目-經名題記.md)（54 漢字，現代編目者） |
 | `wu-shouyang-perspective` | [天仙正理直論増註/01-伍守陽-直論本文.md](../天仙正理直論増註/01-伍守陽-直論本文.md)（10,227 漢字，1622）<br>[同資料夾/02-伍守陽-自註.md](../天仙正理直論増註/02-伍守陽-自註.md)（28,259 漢字，1639，**同一人隔十七年自註**）<br>〔另層，非他所作〕[同資料夾/03-他人序跋.md](../天仙正理直論増註/03-他人序跋.md)（5,386 漢字、12 節、1639–1804） |
 | `liu-huayang-perspective` | [柳華陽-金仙證論與慧命經/01-柳華陽-二書本文與自註.md](../柳華陽-金仙證論與慧命經/01-柳華陽-二書本文與自註.md)（《金仙證論》31,734＋《慧命經》32,123 漢字）<br>〔另層，非他所作〕[同資料夾/02-孫廷璧-慧命經敘.md](../柳華陽-金仙證論與慧命經/02-孫廷璧-慧命經敘.md)（539 漢字，1794） |
 | `utpaladeva-perspective` | [振動抉擇-Spandanirṇaya-Kṣemarāja註.md](../振動抉擇-Spandanirṇaya-Kṣemarāja註.md)<br>[濕婆讚歌集-Śivastotrāvalī-Utpaladeva.md](../濕婆讚歌集-Śivastotrāvalī-Utpaladeva.md)<br>[自在認出頌-Īśvarapratyabhijñākārikā-Utpaladeva.md](../自在認出頌-Īśvarapratyabhijñākārikā-Utpaladeva.md)<br>[認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md](../認出之心要-Pratyabhijñāhṛdaya-Kṣemarāja.md)<br>[非無情能知者之證成-Ajaḍapramātṛsiddhi-Utpaladeva.md](../非無情能知者之證成-Ajaḍapramātṛsiddhi-Utpaladeva.md) |
