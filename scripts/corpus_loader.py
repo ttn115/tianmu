@@ -55,6 +55,7 @@ REGISTERED = {
     "wang-chuyi":     30537,
     "hao-datong":      8420,
     "sun-buer":          814,
+    "li-daochun":     35995,
 }
 NOTE = {
     "qiu-chuji": "對外曾記 24,344；差 1,679 ＝ 他的 293 行粗體篇名（本載入器保留篇名）",
