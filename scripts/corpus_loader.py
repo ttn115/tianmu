@@ -56,6 +56,7 @@ REGISTERED = {
     "hao-datong":      8420,
     "sun-buer":          814,
     "li-daochun":     35995,
+    "li-daochun-ddhy": 17602,
 }
 NOTE = {
     "qiu-chuji": "對外曾記 24,344；差 1,679 ＝ 他的 293 行粗體篇名（本載入器保留篇名）",
@@ -69,8 +70,14 @@ def han(s):
     return len(HAN.findall(s))
 
 
-def _strip(lines, keep_quoted):
-    """剝掉本庫自己的字，留下原典。"""
+def _strip(lines, keep_quoted, drop_bracketed=False):
+    """剥掉本库自己的字，留下原典。
+
+    `drop_bracketed=1` 用于「经＋注」体的语料：被注的经文夹在注文之间，
+    用 `【】` 标出（例《道德會元》：「【道可道，非常道】開口即錯。」）。
+    那段经文**不是注者的字**，所以量注者时要剥掉；而它又不能搬走，
+    搬走注文就失去了被注的对象。故以旗标处理，而不是另开一档。
+    """
     keep = []
     for line in lines:
         t = line.lstrip()
@@ -79,7 +86,7 @@ def _strip(lines, keep_quoted):
         if t.startswith("#") or t.rstrip() == "---":
             continue
         if t.startswith(">"):
-            # 其餘各檔的 `>` 行是本庫自述；孫不二那一檔的 `>` 行是她的詩。
+            # 其余各档的 `>` 行是本库自述；孙不二那一档的 `>` 行是她的诗。
             if not keep_quoted:
                 continue
             t = t.lstrip(">").strip()
@@ -87,10 +94,12 @@ def _strip(lines, keep_quoted):
                 keep.append(t)
             continue
         if re.match(r'^\*[^*].*\*$', t):
-            continue            # 本庫自己的斜體註記行
+            continue            # 本库自己的斜体注记行
         keep.append(line)
-    return "\n".join(keep)
-
+    out = "\n".join(keep)
+    if drop_bracketed:
+        out = re.sub(r'【[^】]*】', '', out)
+    return out
 
 def _spans(path):
     """回傳這個檔裡的 (id, expect, keep_quoted, 正文) 清單。"""
@@ -112,7 +121,7 @@ def _spans(path):
                 if b.group("flags") else {}
             out.append((b.group("id"), int(b.group("expect")),
                         flags.get("keep_quoted") == "1",
-                        _strip(lines[i + 1:k], flags.get("keep_quoted") == "1")))
+                        _strip(lines[i + 1:k], flags.get("keep_quoted") == "1", flags.get("drop_bracketed") == "1")))
             open_at = None
     if open_at is not None:
         raise SystemExit("BEGIN 沒有收尾：%s 第 %d 行" % (path, open_at[0] + 1))
