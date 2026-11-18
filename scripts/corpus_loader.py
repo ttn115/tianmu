@@ -37,12 +37,21 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HAN = re.compile(r'[一-鿿]')
-BEGIN = re.compile(
-    r'<!--\s*NUWA-CORPUS\s+BEGIN\s+id=(?P<id>[\w-]+)'
-    r'(?:\s+layer=(?P<layer>\w+))?'
-    r'\s+expect=(?P<expect>\d+)'
-    r'(?P<flags>(?:\s+\w+=\w+)*)\s*-->')
+#: 标记的键值对不限顺序——只要求有 id 与 expect。
+#: ⚠️ 原本的正规式写死了 id→layer→expect→flags 的顺序，
+#:    于是把 `id=… layer=… select=… expect=…` 全部解析失败（2026-11-18）。
+BEGIN = re.compile(r'<!--\s*NUWA-CORPUS\s+BEGIN\s+(?P<kv>[^>]*?)\s*-->')
 END = re.compile(r'<!--\s*NUWA-CORPUS\s+END(?:\s+id=(?P<id>[\w-]+))?\s*-->')
+
+
+def _kv(s):
+    """把标记里的 key=value 串解析成 dict。"""
+    out = {}
+    for tok in s.split():
+        if "=" in tok:
+            k, v = tok.split("=", 1)
+            out[k] = v
+    return out
 
 #: 各角色的登錄字數。⚠️ 這些是「本庫對外宣稱」的數字，載入器會與實測對帳。
 #: 不符者下面 NOTE 說明原因——**不要為了讓它過而改登錄值**。
@@ -57,11 +66,30 @@ REGISTERED = {
     "sun-buer":          814,
     "li-daochun":     35995,
     "li-daochun-ddhy": 17602,
+    "huineng":          19904,
+    "lengyan":          69940,
+    "lengyan-xu":       1045,
+    "jingang":           5183,
+    "taiyi":             6368,
+    "wumingshi":       102249,
+    "chen-xubai":        5477,
+    "wu-shouyang-zhenglun": 10227,
+    "wu-shouyang-zizhu":   28259,
+    "liu-huayang":      63857,
+    "huang-yuanji":    126574,
+    "heshanggong":      15197,
+    "laozi-jing-heshang": 5284,
+    "wangbi":           11797,
+    "laozi-jing-wangbi":  5297,
+    "guo-xiang":        56558,
+    "cheng-xuanying":  160399,
+    "zhuangzi":         65931,
 }
 NOTE = {
     "qiu-chuji": "對外曾記 24,344；差 1,679 ＝ 他的 293 行粗體篇名（本載入器保留篇名）",
     "sun-buer":  "對外曾記 756；差 58 ＝ 詩題行（本載入器保留篇名）",
     "mayu":      "對外曾記 68,046；差 1,174（1.7%）⚠️ 未解",
+    "zhuangzi":  "本庫此前記 65,954；差 23 ⚠️ 未解（疑為篇題行的計法）",
 }
 
 
@@ -70,14 +98,33 @@ def han(s):
     return len(HAN.findall(s))
 
 
-def _strip(lines, keep_quoted, drop_bracketed=False):
-    """剥掉本库自己的字，留下原典。
+def _strip(lines, keep_quoted=False, drop_bracketed=False, select=None):
+    r"""剥掉本库自己的字，留下原典。
 
-    `drop_bracketed=1` 用于「经＋注」体的语料：被注的经文夹在注文之间，
-    用 `【】` 标出（例《道德會元》：「【道可道，非常道】開口即錯。」）。
-    那段经文**不是注者的字**，所以量注者时要剥掉；而它又不能搬走，
-    搬走注文就失去了被注的对象。故以旗标处理，而不是另开一档。
+    `select` 用于「经＋注」体的语料：那种底本把两（三）层写在同一段里，
+    靠行的样式区分，所以一个 span 要能只取其中一层。
+      select="bold"            只取 `**…**` 行（＝被注的经文层）
+      select="quoted:郭象注"    只取 `> 〔郭象注〕…` 行（＝该注者那一层）
+    本库有四份这种语料：河上公・王弼・南华（郭象＋成玄英两层）。
+    ⚠️ 《道德會元》不同——它的经文夹在注文「之内」用【】标，所以用 drop_bracketed。
+
+    `drop_bracketed=1`：被注的经文夹在注文之间、用 `【】` 标出（例《道德會元》：
+    「【道可道，非常道】開口即錯。」）。那段经文不是注者的字，但也不能搬走
+    （搬走注文就失去被注的对象），故以旗标处理。
     """
+    if select == "bold":
+        keep = [l.strip().strip("*") for l in lines
+                if re.fullmatch(r'\*\*.+\*\*', l.strip())]
+        return "\n".join(keep)
+    if select and select.startswith("quoted:"):
+        tag = select.split(":", 1)[1]
+        keep = []
+        for l in lines:
+            t = l.strip()
+            if t.lstrip(">").strip().startswith("〔" + tag + "〕"):
+                keep.append(re.sub(r'^>*\s*〔[^〕]*〕', '', t))
+        return "\n".join(keep)
+
     keep = []
     for line in lines:
         t = line.lstrip()
@@ -102,31 +149,48 @@ def _strip(lines, keep_quoted, drop_bracketed=False):
     return out
 
 def _spans(path):
-    """回傳這個檔裡的 (id, expect, keep_quoted, 正文) 清單。"""
+    r"""回传这个档里的 (id, expect, keep_quoted, 正文) 清单。
+
+    ⚠️ 允许**嵌套**：「经＋注」体的语料里，经文与注文占同一批行
+    （经文是 `**…**` 行，注是 `> 〔X注〕` 行），所以同一段要能同时属于两层：
+
+        <!-- NUWA-CORPUS BEGIN id=heshanggong   select=quoted:河上公注 expect=… -->
+        <!-- NUWA-CORPUS BEGIN id=laozi-heshang select=bold           expect=… -->
+        …正文…
+        <!-- NUWA-CORPUS END id=laozi-heshang -->
+        <!-- NUWA-CORPUS END id=heshanggong -->
+
+    外层的内容会含内层的标记行，而 `_strip` 会丢掉 `<!--` 行，所以无妨。
+    END 关最近的未关 BEGIN（后进先出）；带 id 的 END 必须与之相符。
+    ⚠️ 键值对不限顺序（只要求 id 与 expect）。
+    """
     lines = io.open(path, encoding='utf-8').read().split("\n")
-    out, open_at = [], None
+    out, stack = [], []
     for k, line in enumerate(lines):
         m = BEGIN.search(line)
         if m:
-            if open_at is not None:
-                raise SystemExit("巢狀 BEGIN：%s 第 %d 行" % (path, k + 1))
-            open_at = (k, m)
+            f = _kv(m.group("kv"))
+            if "id" not in f or "expect" not in f:
+                raise SystemExit("BEGIN 缺 id 或 expect：%s 第 %d 行" % (path, k + 1))
+            stack.append((k, f))
             continue
         m = END.search(line)
         if m:
-            if open_at is None:
+            if not stack:
                 raise SystemExit("多餘的 END：%s 第 %d 行" % (path, k + 1))
-            i, b = open_at
-            flags = dict(p.split("=") for p in b.group("flags").split()) \
-                if b.group("flags") else {}
-            out.append((b.group("id"), int(b.group("expect")),
-                        flags.get("keep_quoted") == "1",
-                        _strip(lines[i + 1:k], flags.get("keep_quoted") == "1", flags.get("drop_bracketed") == "1")))
-            open_at = None
-    if open_at is not None:
-        raise SystemExit("BEGIN 沒有收尾：%s 第 %d 行" % (path, open_at[0] + 1))
+            i, f = stack.pop()
+            if m.group("id") and m.group("id") != f["id"]:
+                raise SystemExit("END 的 id 與 BEGIN 不符：%s 第 %d 行（%s ≠ %s）"
+                                 % (path, k + 1, m.group("id"), f["id"]))
+            out.append((f["id"], int(f["expect"]),
+                        f.get("keep_quoted") == "1",
+                        _strip(lines[i + 1:k],
+                               f.get("keep_quoted") == "1",
+                               f.get("drop_bracketed") == "1",
+                               f.get("select"))))
+    if stack:
+        raise SystemExit("BEGIN 沒有收尾：%s 第 %d 行" % (path, stack[-1][0] + 1))
     return out
-
 
 def _walk():
     for dirpath, dirnames, filenames in os.walk(ROOT):

@@ -120,3 +120,61 @@ report([("甲", a), ("乙", b), ("丙", c)], words=["治身", "無", "有", "心
 `XU`（純語法虛詞集）刻意**不含** `無 有 為 能 可 得 言 謂 自 相 復`——
 **那些在《老子》註一類的文本裡帶內容，放進分母會把要測的東西一起扣掉。**
 換到別的文本類型（詩、語錄、醫書）時這張表要重新審。
+
+---
+
+## 2026-11-18（五）載入器覆蓋從 10 層擴到 28 層
+
+**原本只有 10 份語料有標記，而磁碟上有 31 份 ≥3,000 漢字的語料沒有**——
+每次量都要重新用手找邊界，而本庫已經在這件事上錯過兩次
+（`>` 檔首註記進了四份語料的分母；王弼的卷末題記 466 字進了經文層）。
+
+現在 **28 層、合計 1,038,548 漢字，全部與登錄值相符**。
+
+### 為此加的三個機制
+
+| 機制 | 給誰用 | 說明 |
+|---|---|---|
+| `drop_bracketed=1` | 《道德會元》 | 被註的經文**夾在註文之內**用 `【】` 標出；那不是註者的字，但搬走註文就失去被註的對象 |
+| `select=bold` | 河上公・王弼・南華 | 只取 `**…**` 行 ＝ **被註的經文層** |
+| `select=quoted:TAG` | 同上 | 只取 `> 〔TAG〕…` 行 ＝ 該註者那一層 |
+| **嵌套 span** | 同上 | 經文與註文**佔同一批行**，所以同一段要能同時屬於兩層；END 關最近的未關 BEGIN |
+
+**嵌套的寫法**（南華那份是三層）：
+
+```
+<!-- NUWA-CORPUS BEGIN id=guo-xiang      select=quoted:郭象注   expect=56558 -->
+<!-- NUWA-CORPUS BEGIN id=cheng-xuanying select=quoted:成玄英疏 expect=160399 -->
+<!-- NUWA-CORPUS BEGIN id=zhuangzi       select=bold           expect=65931 -->
+…正文…
+<!-- NUWA-CORPUS END id=zhuangzi -->
+<!-- NUWA-CORPUS END id=cheng-xuanying -->
+<!-- NUWA-CORPUS END id=guo-xiang -->
+```
+
+⚠️ **鍵值對不限順序**（只要求 `id` 與 `expect`）——原本的正規式寫死了
+`id→layer→expect→flags` 的順序，於是把 `id=… select=… expect=…` 全部解析失敗。
+
+### ⭐ 順帶分出來的兩層
+
+- **`zhuangzi` 65,931 漢字**——**莊子原文層**。本庫原本只有郭象與成玄英兩個人格，
+  而**被他們註的那個人**一直沒有可測的語料；現在有了。
+  ⚠️ 本庫此前記 65,954，實測 65,931，**差 23 未解**（疑為篇題行的計法）。
+- **`lengyan-xu` 1,045 漢字**——《楞嚴經》底本所附的**歷代序文**，底本標了「非經文本身」
+  而本庫此前未分；現在與經文層（`lengyan` 69,940）各自一層。
+
+### 目前覆蓋（28 層）
+
+丹道線：`chen-xubai` 5,477・`wu-shouyang-zhenglun` 10,227・`wu-shouyang-zizhu` 28,259・
+`liu-huayang` 63,857・`huang-yuanji` 126,574・`li-daochun` 35,995・`li-daochun-ddhy` 17,602
+全真八人：`wang-chongyang` 55,912・`mayu` 66,872・`tan-chuduan` 14,711・`liu-chuxuan` 22,116・
+`qiu-chuji` 26,023・`wang-chuyi` 30,537・`hao-datong` 8,420・`sun-buer` 814
+《老子》三家：`heshanggong` 15,197・`wangbi` 11,797（＋經文層 `laozi-jing-heshang` 5,284・
+`laozi-jing-wangbi` 5,297）
+《莊子》三層：`zhuangzi` 65,931・`guo-xiang` 56,558・`cheng-xuanying` 160,399
+佛典與其他：`huineng` 19,904・`lengyan` 69,940・`lengyan-xu` 1,045・`jingang` 5,183・
+`taiyi` 6,368・`wumingshi` 102,249
+
+⚠️ **仍未標記**：`全真龍門基礎丹功講義/` 四檔（來靜與賴賢宗，**兩人的字混在同一批檔裡，
+分層需要逐段判斷作者，不是機械可分**）、`道德經.md`（獨立經文檔，與三家的經文層重複）、
+以及本庫自己寫的導讀與方法檔。
