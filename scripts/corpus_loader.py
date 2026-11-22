@@ -75,6 +75,13 @@ REGISTERED = {
     "chen-xubai":        5477,
     "wu-shouyang-zhenglun": 10227,
     "wu-shouyang-zizhu":   28259,
+    #: 《仙佛合宗語錄》2026-11-22 收入。⚠️ 這本書推翻了本庫據《直論增註》
+    #:    寫下的三處結論（天心／任督／玉枕「伍守陽 0 次」）——那是
+    #:    **只有他一本書**造成的假缺口。問答體，提問者三人各自一層。
+    "wu-shouyang-hezong":  48656,
+    "zhu-taihe":            3291,
+    "wu-taiyi":             3292,
+    "wu-taichu":             169,
     "liu-huayang":      63857,
     "huang-yuanji":    126574,
     "heshanggong":      15197,
