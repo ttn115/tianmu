@@ -158,7 +158,11 @@ REGISTERED = {
     "laozi-jing-wangbi":  5297,
     "guo-xiang":        56558,
     "cheng-xuanying":  160399,
-    "zhuangzi":         65931,
+    #: ⚠️ 2026-11-24：34 行卷末題署（「南華真經註疏卷之二」一類）一直
+    #: 算在經文層裡，345 漢字（0.52%）。已另立 nanhua-colophon。
+    #: ✅ 題署裡「性」0 次「道」0 次，故「內七篇性 0 次」結論不受影響。
+    "zhuangzi":          65586,
+    "nanhua-colophon":     345,
 }
 NOTE = {
     "qiu-chuji": "對外曾記 24,344；差 1,679 ＝ 他的 293 行粗體篇名（本載入器保留篇名）",
@@ -173,7 +177,8 @@ def han(s):
     return len(HAN.findall(s))
 
 
-def _strip(lines, keep_quoted=False, drop_bracketed=False, select=None):
+def _strip(lines, keep_quoted=False, drop_bracketed=False, select=None,
+           exclude=None):
     r"""剥掉本库自己的字，留下原典。
 
     `select` 用于「经＋注」体的语料：那种底本把两（三）层写在同一段里，
@@ -187,9 +192,27 @@ def _strip(lines, keep_quoted=False, drop_bracketed=False, select=None):
     「【道可道，非常道】開口即錯。」）。那段经文不是注者的字，但也不能搬走
     （搬走注文就失去被注的对象），故以旗标处理。
     """
-    if select == "bold":
-        keep = [l.strip().strip("*") for l in lines
-                if re.fullmatch(r'\*\*.+\*\*', l.strip())]
+    if select == "bold" or (select or "").startswith("bold:"):
+        # ⚠️ bold 行可以帶說話人標籤 `**〔X〕…**`（莊子那一層用）。
+        #    `bold` 取全部並剝標籤（規模不變）；`bold:X` 只取 X 的。
+        want = select.split(":", 1)[1] if ":" in (select or "") else None
+        keep = []
+        for l in lines:
+            t = l.strip()
+            if not re.fullmatch(r'\*\*.+\*\*', t):
+                continue
+            t = t.strip("*")
+            m = re.match(r'〔([^〕]*)〕', t)
+            if want is not None:
+                if not m or m.group(1) != want:
+                    continue
+            # ⚠️ exclude：`select=bold` 時排除帶該標籤的行
+            #    （《南華》的 34 行卷末題署一直算在經文層裡，345 漢字）
+            elif exclude and m and m.group(1) == exclude:
+                continue
+            if m:
+                t = t[m.end():]
+            keep.append(t)
         return "\n".join(keep)
     if select and select.startswith("quoted:"):
         tag = select.split(":", 1)[1]
@@ -262,7 +285,8 @@ def _spans(path):
                         _strip(lines[i + 1:k],
                                f.get("keep_quoted") == "1",
                                f.get("drop_bracketed") == "1",
-                               f.get("select"))))
+                               f.get("select"),
+                               f.get("exclude"))))
     if stack:
         raise SystemExit("BEGIN 沒有收尾：%s 第 %d 行" % (path, stack[-1][0] + 1))
     return out
