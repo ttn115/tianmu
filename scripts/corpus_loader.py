@@ -131,7 +131,13 @@ REGISTERED = {
     "upanisad":                  76,
     "lengyan-cbeta-note":        41,
     "lengyan-xu":       1045,
-    "jingang":           5183,
+    #: 《金剛經》2026-11-24 分說話人（3 層）。
+    #: jingang 5,183 -> jingang-fo 3,630（70.0%）+ subhuti 1,138 + 記錄者 415。
+    #: 招牌句式「即非…是名」佛 22／須菩提 21，而密度須菩提是佛的 3.0 倍
+    #: （p=0.00041）——那不是佛獨有的句式。
+    "jingang-fo":          3630,
+    "subhuti-jingang":     1138,
+    "jingang-recorder":    415,
     "taiyi":             6368,
     "wumingshi":       102249,
     "chen-xubai":        5477,
