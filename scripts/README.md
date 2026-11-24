@@ -172,7 +172,7 @@ report([("甲", a), ("乙", b), ("丙", c)], words=["治身", "無", "有", "心
 《老子》三家：`heshanggong` 15,197・`wangbi` 11,797（＋經文層 `laozi-jing-heshang` 5,284・
 `laozi-jing-wangbi` 5,297）
 《莊子》三層：`zhuangzi` 65,931・`guo-xiang` 56,558・`cheng-xuanying` 160,399
-佛典與其他：`huineng` 19,904・`lengyan` 69,940・`lengyan-xu` 1,045・`jingang` 5,183・
+佛典與其他：`huineng` **13,986**（⚠️ 2026-11-24 壇經分說話人，此前記 19,904 是全本；另 23 層見 `六祖壇經.md`）・`lengyan` 69,940・`lengyan-xu` 1,045・`jingang` 5,183・
 `taiyi` 6,368・`wumingshi` 102,249
 
 ⚠️ **仍未標記**：`全真龍門基礎丹功講義/` 四檔（來靜與賴賢宗，**兩人的字混在同一批檔裡，
