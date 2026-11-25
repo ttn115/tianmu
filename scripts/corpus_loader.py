@@ -313,6 +313,31 @@ REGISTERED = {
     "cxl-惟乾":                    8,
     "cxl-劉觀時":                   7,
     "cxl-黃省曾":                   2,
+
+    #: 《抱朴子》（葛洪自筆，2026-11-25 收）。
+    #: ⭐ `baopuzi-huowen` 是葛洪**自己設的**反對者——
+    #:    本庫唯一一組「同一隻手寫的兩個說話人」空對照。
+    "ge-hong":                 128801,
+    "ge-hong-waipian":          64578,
+    "ge-hong-neipian":          64223,
+    "ge-hong-zixu":              4470,
+    "baopuzi-fulu":             12452,
+    "bpz-taren":                 4235,
+    "baopuzi-huowen":            5272,
+    "baopuzi-yinshu":            3708,
+    "bpz-yimin":                 2803,
+    "zheng-yin":                 2338,
+    "bao-jingyan":               1060,
+    "bpz-qianju":                 735,
+    "bpz-juling":                 659,
+    "bpz-ousu":                   558,
+    "bpz-letian":                 539,
+    "bpz-fushi":                  385,
+    "bpz-xuanbo":                 342,
+    "bpz-huaibing":               278,
+    "bpz-menren":                 209,
+    "bpz-shiren":                 206,
+    "bpz-jisheng":                 69,
 }
 NOTE = {
     "qiu-chuji": "對外曾記 24,344；差 1,679 ＝ 他的 293 行粗體篇名（本載入器保留篇名）",
