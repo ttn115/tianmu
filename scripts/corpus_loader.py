@@ -254,6 +254,65 @@ REGISTERED = {
     #: ✅ 題署裡「性」0 次「道」0 次，故「內七篇性 0 次」結論不受影響。
     "zhuangzi":          65586,
     "nanhua-colophon":     345,
+    #: ---- 《傳習錄》（2026-11-25 收，65,032 漢字／342 條／56 層）----
+    #: ⚠️ wang-yangming 是〔先生〕＋〔先生書〕的聯集；
+    #:    -yulu（門人筆錄）與 -shu（他自己執筆）分開登錄才能對讀。
+    "wang-yangming":             48113,
+    "wang-yangming-yulu":        28062,
+    "wang-yangming-shu":         20051,
+    "wang-yangming-zhuanshu":    2297,
+    "cxl-wenzhe":                1800,
+    "lu-yuanjing":               1601,
+    "xu-ai":                     1228,
+    "cxl-rec-huangshengzeng":    1048,
+    "cxl-rec-huangyifang":       947,
+    "qian-dehong":               940,
+    "gu-dongqiao":               842,
+    "zhou-daotong":              783,
+    "cxl-rec-chenjiuchuan":      768,
+    "ouyang-chongyi":            555,
+    "cxl-陳九川":                   520,
+    "cxl-rec-xuekan":            481,
+    "cxl-rec-luchen":            440,
+    "cxl-youren":                342,
+    "cxl-王嘉秀":                   255,
+    "cxl-薛侃":                    229,
+    "cxl-陸澄":                    209,
+    "cxl-rec-xuai":              201,
+    "cxl-黃以方":                   182,
+    "cxl-汝中":                    135,
+    "cxl-梁日孚":                   127,
+    "cxl-rec-huangxiuyi":        98,
+    "cxl-蕭惠":                    92,
+    "cxl-士德":                    87,
+    "cxl-鄒謙之":                   76,
+    "cxl-蔡希淵":                   74,
+    "cxl-馬子莘":                   52,
+    "cxl-鄭朝朔":                   49,
+    "cxl-德章":                    46,
+    "cxl-正之":                    45,
+    "cxl-守衡":                    44,
+    "cxl-敷英":                    28,
+    "cxl-于中":                    26,
+    "cxl-黃誠甫":                   22,
+    "cxl-子仁":                    22,
+    "cxl-朱本思":                   20,
+    "cxl-黃勉叔":                   20,
+    "cxl-伯生":                    19,
+    "cxl-洪":                     18,
+    "cxl-黃勉之":                   16,
+    "cxl-范兆期":                   16,
+    "cxl-志道":                    15,
+    "cxl-國英":                    15,
+    "cxl-唐詡":                    14,
+    "cxl-侯璧":                    13,
+    "cxl-甘泉":                    13,
+    "cxl-尚謙":                    12,
+    "cxl-柴鳴治":                   10,
+    "cxl-孟源":                    10,
+    "cxl-惟乾":                    8,
+    "cxl-劉觀時":                   7,
+    "cxl-黃省曾":                   2,
 }
 NOTE = {
     "qiu-chuji": "對外曾記 24,344；差 1,679 ＝ 他的 293 行粗體篇名（本載入器保留篇名）",
@@ -306,11 +365,16 @@ def _strip(lines, keep_quoted=False, drop_bracketed=False, select=None,
             keep.append(t)
         return "\n".join(keep)
     if select and select.startswith("quoted:"):
-        tag = select.split(":", 1)[1]
+        #: ⚠️ `quoted:A|B` 取**多個標籤的聯集**。
+        #:    《傳習錄》需要它：王陽明在卷上下是〔先生〕（門人筆錄）、
+        #:    在卷中是〔先生書〕（他自己執筆），而 `wang-yangming` 要兩者都算。
+        #:    兩個標籤分開登錄（`-yulu`／`-shu`）才能對讀，聯集才是他的全部。
+        tags = [t for t in select.split(":", 1)[1].split("|") if t]
+        pre = tuple("〔" + t + "〕" for t in tags)
         keep = []
         for l in lines:
             t = l.strip()
-            if t.lstrip(">").strip().startswith("〔" + tag + "〕"):
+            if t.lstrip(">").strip().startswith(pre):
                 keep.append(re.sub(r'^>*\s*〔[^〕]*〕', '', t))
         return "\n".join(keep)
 
